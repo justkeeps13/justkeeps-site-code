@@ -1,0 +1,31 @@
+/* jkt-destinations-results-a11y-style-2026-09-10 */
+#jkx .jkt-audit-empty{padding:56px 0;font-size:15px;color:color-mix(in srgb,currentColor 52%,transparent)}
+
+/* jkt-destinations-contrast-2026-09-10 */
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .jkx__card p,
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .jkx__rn{color:#5f5b58!important}
+
+/* jkt-destinations-search-autocomplete-2026-09-10-css */
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkx__find{position:relative;z-index:30;overflow:visible!important}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;z-index:100;max-height:min(58vh,560px);overflow:auto;-webkit-overflow-scrolling:touch;background:#fbf6f2;border:1px solid rgba(31,35,38,.24);box-shadow:0 18px 42px rgba(17,17,17,.16)}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete.is-open{display:block}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px 12px;border-bottom:1px solid rgba(31,35,38,.16);font-family:Arial,sans-serif;font-size:10px;line-height:1.2;letter-spacing:.16em;text-transform:uppercase;color:rgba(31,35,38,.62)}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-row{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:16px;width:100%;padding:12px 20px;border:0;border-bottom:1px solid rgba(31,35,38,.14);background:transparent;color:#222;text-align:left;cursor:pointer}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-row:last-child{border-bottom:0}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-row:hover,
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-row:focus-visible,
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-row.is-active{background:rgba(31,35,38,.055);outline:none}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-thumb{width:64px;height:64px;object-fit:cover;background:#e8e0da;display:block}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-thumb.is-placeholder{background:linear-gradient(135deg,#d9cfc7,#b8a99d)}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-meta{display:block;min-width:0}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-country{display:block;margin-bottom:6px;font-family:Arial,sans-serif;font-size:10px;line-height:1.2;letter-spacing:.18em;text-transform:uppercase;color:#a35d3e}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-name{display:block;overflow:hidden;font:400 28px/1.02 "Cormorant Garamond",Georgia,serif;text-overflow:ellipsis;white-space:nowrap}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-empty{padding:28px 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.5;color:rgba(31,35,38,.68)}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx.jkt-dest-autocomplete-active #jkx-out{display:none!important}
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx.jkt-dest-autocomplete-active #jkx-chips{display:none!important}
+@media screen and (max-width:767px){
+  html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete{top:calc(100% + 8px);max-height:55vh}
+  html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-row{grid-template-columns:52px minmax(0,1fr);gap:12px;padding:11px 14px}
+  html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-thumb{width:52px;height:52px}
+  html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] #jkx .jkt-dest-autocomplete-name{font-size:24px}
+}

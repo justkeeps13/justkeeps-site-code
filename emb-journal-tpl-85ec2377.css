@@ -1,0 +1,46 @@
+/* emb-journal-tpl-85ec2377 block 1 */
+html.jkt-press-archive-article .journal_template_banner{display:flex!important;min-height:0!important;padding:clamp(1.5rem,4vw,4rem)!important;align-items:center!important;justify-content:center!important;overflow:visible!important;background:#f1ece4!important}
+html.jkt-press-archive-article .journal_template_banner_image{position:relative!important;inset:auto!important;display:block!important;width:auto!important;height:auto!important;max-width:min(100%,68rem)!important;max-height:78vh!important;margin:0 auto!important;object-fit:contain!important;object-position:center!important;box-shadow:0 20px 55px rgba(44,38,32,.13)}
+html.jkt-press-archive-article .journal_template_banner_overlay{display:none!important}
+@media screen and (max-width:767px){html.jkt-press-archive-article .journal_template_banner{padding:1rem!important}html.jkt-press-archive-article .journal_template_banner_image{width:100%!important;max-height:none!important;box-shadow:0 12px 32px rgba(44,38,32,.12)}}
+
+/* emb-journal-tpl-85ec2377 block 3 */
+#jkt-article-cta-bar{box-sizing:border-box;width:100%;min-height:300px;display:flex;align-items:center;background-color:#17262d;background-image:linear-gradient(rgba(12,18,20,.08) 0%,rgba(20,22,22,.38) 48%,#222 100%),url("https://cdn.prod.website-files.com/6a1f886348e8c1c8bceca358/6a9f5abe84946e9b266371f5_luxury-travel-footer-banner-coastal-terrace.webp");background-position:50% 52%,50% 52%;background-repeat:no-repeat,no-repeat;background-size:cover,cover;color:#fff;padding:clamp(3rem,7vw,6rem) clamp(1.5rem,6vw,6rem);margin-top:0}
+#jkt-article-cta-bar .jkt-article-cta-inner{width:100%;max-width:84rem;margin:0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:1rem}
+#jkt-article-cta-bar .jkt-article-cta-label{margin:0;color:rgba(255,255,255,.72);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase}
+#jkt-article-cta-bar .jkt-article-cta-title{margin:0;max-width:48rem;color:#fff;font-size:clamp(2rem,4vw,4rem);line-height:1.05;font-weight:400}
+#jkt-article-cta-bar .jkt-article-cta-link{display:inline-flex;align-items:center;margin-top:1rem;color:#fff;border-bottom:1px solid rgba(255,255,255,.72);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding-bottom:.45rem}
+.jkt-article-share-row{box-sizing:border-box;width:100%;max-width:84rem;margin:1.25rem auto 2rem;padding:0 clamp(1.5rem,6vw,6rem);display:flex;justify-content:flex-end}
+.jkt-article-share{appearance:none;border:1px solid currentColor;background:transparent;color:#173323;padding:.75rem 1rem;font:inherit;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.jkt-article-share:hover,.jkt-article-share:focus-visible{background:#173323;color:#fff;outline:none}
+section.jkt-destination-explore-1[data-jkt-home-image-bar]{box-sizing:border-box;background-color:#17262d!important;background-image:linear-gradient(rgba(12,18,20,.08) 0%,rgba(20,22,22,.38) 48%,#222 100%),url("https://cdn.prod.website-files.com/6a1f886348e8c1c8bceca358/6a9f5abe84946e9b266371f5_luxury-travel-footer-banner-coastal-terrace.webp")!important;background-position:50% 52%,50% 52%!important;background-repeat:no-repeat,no-repeat!important;background-size:cover,cover!important;color:#fff!important}
+section.jkt-destination-explore-1[data-jkt-home-image-bar] .jkt-destination-explore__eyebrow{color:rgba(255,255,255,.72)!important}
+section.jkt-destination-explore-1[data-jkt-home-image-bar] .jkt-destination-explore__title,section.jkt-destination-explore-1[data-jkt-home-image-bar] .jkt-destination-explore__link{color:#fff!important}
+section.jkt-destination-explore-1[data-jkt-home-image-bar] .jkt-destination-explore__search{color:#fff;border-color:rgba(255,255,255,.5)}
+section.jkt-destination-explore-1[data-jkt-home-image-bar] input{color:#fff}
+section.jkt-destination-explore-1[data-jkt-home-image-bar] input::placeholder{color:rgba(255,255,255,.72)}
+@media screen and (max-width:767px){#jkt-article-cta-bar{min-height:260px;padding:3rem 1.25rem}#jkt-article-cta-bar .jkt-article-cta-title{font-size:clamp(1.8rem,9vw,2.8rem)}.jkt-article-share-row{justify-content:flex-start;margin:1rem auto 1.5rem;padding:0 1.25rem}}
+.jkt-journal-end-cta{display:none!important}
+
+/* emb-journal-tpl-85ec2377 block 6 */
+#jkt-article-cta-bar .jkt-destination-search-panel{width:100%;max-width:48rem;margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+#jkt-article-cta-bar .jkt-destination-search-heading{margin:0;color:#fff;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase}
+#jkt-article-cta-bar .jkt-destination-search-form{display:flex;align-items:center;gap:1rem;width:100%;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:.75rem}
+#jkt-article-cta-bar .jkt-destination-search-input{flex:1;min-width:0;border:0;background:transparent;color:#fff;font:inherit;font-size:.9rem;outline:none;padding:.25rem 0}
+#jkt-article-cta-bar .jkt-destination-search-input::placeholder{color:rgba(255,255,255,.72)}
+#jkt-article-cta-bar .jkt-destination-search-submit,#jkt-article-cta-bar .jkt-destination-search-link{border:0;background:transparent;color:#fff;font:inherit;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;white-space:nowrap;cursor:pointer}
+#jkt-article-cta-bar .jkt-destination-search-link{display:inline-flex;border-bottom:1px solid rgba(255,255,255,.72);padding-bottom:.35rem;width:max-content}
+#jkt-article-cta-bar .jkt-destination-search-submit:hover,#jkt-article-cta-bar .jkt-destination-search-submit:focus-visible,#jkt-article-cta-bar .jkt-destination-search-link:hover,#jkt-article-cta-bar .jkt-destination-search-link:focus-visible{opacity:.72;outline:none}
+@media screen and (max-width:767px){#jkt-article-cta-bar .jkt-destination-search-form{display:flex;flex-direction:column;align-items:stretch;gap:.75rem}#jkt-article-cta-bar .jkt-destination-search-submit{align-self:flex-start}}
+
+/* emb-journal-tpl-85ec2377 block 8 */
+#jkt-article-cta-bar .jkt-article-cta-label,#jkt-article-cta-bar .jkt-article-cta-title{display:none!important}
+#jkt-article-cta-bar .jkt-article-cta-link{margin-top:0!important}
+
+/* emb-journal-tpl-85ec2377 block 9 */
+#jkt-article-cta-bar .jkt-article-cta-link{display:none!important}
+#jkt-article-cta-bar{align-items:flex-start!important}
+#jkt-article-cta-bar .jkt-destination-search-panel{margin-top:0!important}
+
+/* emb-journal-tpl-85ec2377 block 10 */
+#jkt-article-cta-bar .jkt-destination-search-form{margin-top:2.5rem!important}

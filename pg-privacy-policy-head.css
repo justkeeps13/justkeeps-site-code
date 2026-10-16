@@ -1,0 +1,31 @@
+/* jkt-legal-header-contrast */
+/* Page-scoped contrast correction for legal pages on an ivory hero background. */
+.white_brand_logo { opacity: 0 !important; }
+.black_brand_logo { opacity: 1 !important; }
+html body .navbar:not(.fixed):not(.jkt-menu-open) .menu-button-2 .line {
+  background: #222222 !important;
+  background-color: #222222 !important;
+}
+
+/* jkt-privacy-semantic-basis-table-2026-09-05 */
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table{width:100%;border-collapse:collapse;table-layout:fixed;color:inherit}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table thead th{padding:1rem 1.25rem;border:1px solid rgba(34,34,34,.22);background:rgba(34,34,34,.04);text-align:left;vertical-align:bottom}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table thead th:first-child{width:42%}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tbody th,
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tbody td{padding:1rem 1.25rem;border:1px solid rgba(34,34,34,.22);font-weight:400;text-align:left;vertical-align:top}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table .pp_table_td_item{margin:0;overflow-wrap:normal;word-break:normal;hyphens:none}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table [data-label]::before{display:none}
+@media(max-width:767px){
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table,
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tbody,
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tr,
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table th,
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table td{display:block;width:100%}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tbody tr{margin:0 0 1rem;border:1px solid rgba(34,34,34,.22)}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tbody th,
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tbody td{border:0;padding:.9rem 1rem}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table tbody th{background:rgba(34,34,34,.04)}
+html[data-wf-page="6a732e93101fdb20d5899ff6"] #jkt-privacy-basis-table [data-label]::before{content:attr(data-label);display:block;margin:0 0 .35rem;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+}

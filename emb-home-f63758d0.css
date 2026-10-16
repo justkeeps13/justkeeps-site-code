@@ -1,0 +1,46 @@
+/* emb-home-f63758d0 block 1 */
+body:has([data-jkt-approved-testimonial]) .testimonial_wrapper .testimonial_wrap{display:block !important;height:auto !important}
+body:has([data-jkt-approved-testimonial]) .testimonial_wrapper .testimonial_wrap > .section_header,body:has([data-jkt-approved-testimonial]) .testimonial_wrapper .testimonial_wrap > .swiper,body:has([data-jkt-approved-testimonial]) .testimonial_wrapper .testimonial_wrap > .slider_control_button{display:none !important}
+.jkt-approved-testimonial{--jkt-ivory:#fbf6f2;--jkt-charcoal:#242628;--jkt-muted:rgba(251,246,242,.62);box-sizing:border-box;width:100%;max-width:1080px;margin:0 auto;color:var(--jkt-ivory);font-family:inherit}
+.jkt-approved-testimonial *{box-sizing:border-box}
+.jkt-approved-header{max-width:660px;margin:0 auto clamp(2rem,4vw,3rem);text-align:center}
+.jkt-approved-kicker{margin:0 0 .8rem;color:var(--jkt-muted);font-size:.625rem;line-height:1.3;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+.jkt-approved-title{margin:0;color:var(--jkt-ivory);font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.12;font-weight:300}
+.jkt-approved-stage{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);min-height:520px;overflow:hidden;border:1px solid rgba(251,246,242,.2);border-radius:18px;background:var(--jkt-charcoal);box-shadow:0 22px 55px rgba(0,0,0,.16);touch-action:pan-y}
+.jkt-approved-media{min-height:520px;background:#202224}
+.jkt-approved-media img{display:block;width:100%;height:100%;object-fit:cover}
+.jkt-approved-copy{display:flex;flex-direction:column;min-width:0;padding:clamp(1.75rem,4vw,3.5rem)}
+.jkt-approved-quote{margin:0;color:var(--jkt-ivory);font-size:clamp(1.4rem,2.25vw,2.15rem);line-height:1.28;font-style:italic;font-weight:300;letter-spacing:-.01em}
+.jkt-approved-meta{display:flex;align-items:center;margin-top:auto;padding-top:2.2rem}
+.jkt-approved-client{margin:0 0 .35rem;color:var(--jkt-ivory);font-size:.7rem;line-height:1.35;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.jkt-approved-detail{margin:0;color:var(--jkt-muted);font-size:.7rem;line-height:1.45;letter-spacing:.04em}
+.jkt-approved-controls{display:flex;align-items:center;gap:.8rem;margin-top:2rem;padding-top:1.1rem;border-top:1px solid rgba(251,246,242,.2)}
+.jkt-approved-arrow{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:1px solid rgba(251,246,242,.55);border-radius:50%;background:transparent;color:var(--jkt-ivory);cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease;flex:0 0 auto}
+.jkt-approved-arrow:hover,.jkt-approved-arrow:focus-visible{background:var(--jkt-ivory);border-color:var(--jkt-ivory);color:var(--jkt-charcoal)}
+.jkt-approved-arrow:focus-visible{outline:2px solid var(--jkt-ivory);outline-offset:3px}
+.jkt-approved-arrow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.jkt-approved-counter{min-width:76px;color:var(--jkt-muted);font-size:.68rem;line-height:1;letter-spacing:.16em;text-align:center}
+@media screen and (max-width:991px){
+ .jkt-approved-testimonial{max-width:100%}
+ .jkt-approved-stage{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);min-height:440px}
+ .jkt-approved-media{min-height:440px}
+ .jkt-approved-copy{padding:clamp(1.35rem,4vw,2.5rem)}
+ .jkt-approved-quote{font-size:clamp(1.2rem,2.8vw,1.7rem)}
+}
+@media screen and (max-width:767px){
+ .jkt-approved-header{text-align:left;margin-bottom:1.75rem}
+ .jkt-approved-stage{display:block;min-height:0}
+ .jkt-approved-media{height:clamp(230px,58vw,340px);min-height:0}
+ .jkt-approved-copy{min-height:405px;padding:1.5rem 1.25rem 1.35rem}
+ .jkt-approved-quote{font-size:clamp(1.15rem,5.5vw,1.5rem);line-height:1.3}
+ .jkt-approved-meta{padding-top:1.5rem}
+ .jkt-approved-controls{margin-top:1.5rem;padding-top:1rem}
+}
+@media screen and (max-width:479px){
+ .jkt-approved-testimonial{padding:0 .1rem}
+ .jkt-approved-title{font-size:1.7rem}
+ .jkt-approved-media{height:230px}
+ .jkt-approved-copy{min-height:410px;padding:1.35rem 1rem 1.1rem}
+ .jkt-approved-client{font-size:.64rem;letter-spacing:.13em}
+ .jkt-approved-detail{font-size:.66rem}
+}
