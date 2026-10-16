@@ -1,0 +1,128 @@
+/* jkt-service-pages-production-style */
+#main-content .jkt-frame{background:#f7f4ee;color:#28231e;overflow:hidden}
+#main-content .jkt-mast{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);min-height:720px;background:#211d19;color:#f7f4ec}
+#main-content .jkt-mast-img{grid-column:1;grid-row:1;position:static!important;align-self:stretch;display:block;width:100%;height:100%;min-height:720px;object-fit:cover}
+#main-content .family-office-mast-gap{display:none}
+#main-content .jkt-mast-inner{grid-column:2;grid-row:1;position:static!important;box-sizing:border-box;width:auto!important;height:auto!important;min-height:0!important;display:flex;align-items:center;padding:clamp(44px,7vw,108px)}
+#main-content .jkt-mast-copy{max-width:570px}
+#main-content .jkt-crumb,#main-content .jkt-crumb-name{margin:0;color:#d2b47a;font-size:11px;line-height:1.6;letter-spacing:.16em;text-transform:uppercase}
+#main-content .jkt-crumb-name{margin-bottom:30px;color:#f7f4ec}
+#main-content .jkt-mast-h1{margin:0 0 28px;color:#f7f4ec;font-size:clamp(46px,5.4vw,84px);line-height:.99}
+#main-content .jkt-mast-sub{max-width:470px;margin:0;color:rgba(247,244,236,.82);font-size:16px;line-height:1.7}
+#main-content .jkt-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+#main-content .jkt-cta a{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1px solid rgba(247,244,236,.65);color:#f7f4ec;font-size:11px;letter-spacing:.12em;text-decoration:none;text-transform:uppercase}
+#main-content .jkt-cta a:first-child{border-color:#d2b47a;background:#d2b47a;color:#211d19}
+#main-content .jkt-sec{max-width:1280px;margin:0 auto;padding:112px clamp(26px,7vw,112px)}
+#main-content .jkt-sec>.jkt-eyebrow{margin:0 0 18px;color:#aa8751;font-size:11px;line-height:1.5;letter-spacing:.16em;text-transform:uppercase}
+#main-content .jkt-head2{max-width:700px;margin-bottom:54px}
+#main-content .jkt-h2{margin:0 0 22px;color:#28231e;font-size:clamp(38px,4.3vw,64px);line-height:1.02}
+#main-content .jkt-standfirst{color:#514940;font-size:18px;line-height:1.72}
+#main-content .jkt-split{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:clamp(38px,7vw,104px);align-items:start}
+#main-content .jkt-sm-inner{position:sticky;top:28px}
+#main-content .jkt-sm-img{display:block;width:100%;height:640px;object-fit:cover}
+#main-content .jkt-sm-cap{margin:14px 0 0;color:#8a7354;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+#main-content .jkt-ledger{min-width:0}
+#main-content .jkt-ledger>.w-richtext{display:grid!important;grid-template-columns:minmax(145px,.75fr) minmax(0,1.25fr)!important;column-gap:28px;row-gap:20px;align-items:start}
+#main-content .jkt-ledger h3{grid-column:1;margin:0;color:#28231e;font-size:18px;line-height:1.15}
+#main-content .jkt-ledger p{grid-column:2;margin:0;padding-bottom:20px;border-bottom:1px solid rgba(40,35,30,.14);color:#514940;font-size:15px;line-height:1.62}
+#main-content .family-office-comparison{max-width:1280px;margin:0 auto;padding:36px clamp(26px,7vw,112px) 112px}
+#main-content .family-office-comparison>.w-richtext{display:grid;grid-template-columns:minmax(160px,.75fr) minmax(0,1.25fr);column-gap:28px;row-gap:22px;max-width:920px;margin:54px 0 0;padding-top:44px;border-top:1px solid rgba(40,35,30,.16)}
+#main-content .family-office-comparison>.w-richtext h3{grid-column:1;margin:0;color:#28231e;font-size:20px;line-height:1.18}
+#main-content .family-office-comparison>.w-richtext p{grid-column:2;margin:0;padding-bottom:22px;border-bottom:1px solid rgba(40,35,30,.14);color:#514940;font-size:15px;line-height:1.64}
+#main-content .jkt-journey{position:relative;display:grid;align-items:end;min-height:520px}
+#main-content .jkt-journey-img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+#main-content .jkt-journey-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(27,23,19,.86),rgba(27,23,19,.22))}
+#main-content .jkt-journey-cap{position:relative;z-index:1;box-sizing:border-box;width:100%;max-width:1280px;margin:0 auto;padding:72px clamp(26px,7vw,112px);color:#f7f4ec}
+#main-content .jkt-jc-inner{max-width:580px}
+#main-content .jkt-journey h3{margin:0 0 17px;color:#f7f4ec;font-size:clamp(34px,4vw,56px);line-height:1.05}
+#main-content .jkt-journey p{color:rgba(247,244,236,.84);font-size:16px;line-height:1.72}
+#main-content .jkt-journey a{color:#f7f4ec;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+/* Keep the service-request cards aligned, regardless of heading length. */
+#main-content .jkt-concierge-live-flow{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;align-items:stretch!important}
+#main-content .jkt-concierge-live-flow>div{display:grid!important;grid-template-rows:auto minmax(3.1em,auto) 1fr!important;align-content:start!important;height:100%!important}
+#main-content .jkt-concierge-live-flow>div>img{display:block!important;width:100%!important;height:100%!important;min-height:0!important;aspect-ratio:1.28/1;object-fit:cover!important}
+#main-content .jkt-concierge-live-flow>div>h3{box-sizing:border-box!important;min-height:3.1em!important;margin:0!important;padding:clamp(28px,3vw,48px) clamp(24px,2.7vw,52px) 18px!important;align-self:start!important}
+#main-content .jkt-concierge-live-flow>div>p{margin:0!important;padding:0 clamp(24px,2.7vw,52px) clamp(34px,4vw,58px)!important;align-self:start!important}
+@media(max-width:991px){
+#main-content .jkt-mast{display:block}
+#main-content .jkt-mast-img{height:58vw;min-height:390px}
+#main-content .jkt-mast-inner{padding:58px 7vw}
+#main-content .jkt-split{grid-template-columns:1fr}
+#main-content .jkt-sm-inner{position:static}
+#main-content .jkt-sm-img{height:56vw;min-height:360px}
+#main-content .jkt-ledger>.w-richtext,#main-content .family-office-comparison>.w-richtext{grid-template-columns:1fr!important}
+#main-content .jkt-ledger h3,#main-content .jkt-ledger p,#main-content .family-office-comparison>.w-richtext h3,#main-content .family-office-comparison>.w-richtext p{grid-column:1}
+#main-content .jkt-concierge-live-flow{grid-template-columns:1fr!important}
+#main-content .jkt-concierge-live-flow>div{grid-template-rows:auto auto auto!important}
+#main-content .jkt-concierge-live-flow>div>h3{min-height:0!important}
+}
+/* Remove the empty dark image panel and keep the caption on the image. */
+#main-content .jkt-split-media,#main-content .jkt-sm-inner{height:640px!important;min-height:0!important;background:transparent!important}
+#main-content .jkt-sm-inner{position:sticky!important;overflow:hidden!important}
+#main-content .jkt-sm-cap{position:absolute!important;z-index:1;top:auto!important;right:0!important;bottom:0!important;left:0!important;box-sizing:border-box!important;width:auto!important;margin:0!important;padding:40px 20px 16px!important;background:linear-gradient(transparent,rgba(20,18,16,.7))!important;color:#f7f4ec!important}
+@media(max-width:991px){#main-content .jkt-split-media,#main-content .jkt-sm-inner{height:56vw!important;min-height:360px!important}}
+
+/* Align Picture Tiles headings and descriptions on one shared grid. */
+#main-content [data-jkt-s2type="Picture Tiles"]>.w-richtext{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:96px auto!important;align-items:start!important}
+#main-content [data-jkt-s2type="Picture Tiles"]>.w-richtext h3{grid-row:1!important;grid-column:auto!important;box-sizing:border-box!important}
+#main-content [data-jkt-s2type="Picture Tiles"]>.w-richtext p{grid-row:2!important;grid-column:auto!important}
+@media(max-width:991px){#main-content [data-jkt-s2type="Picture Tiles"]>.w-richtext{grid-template-columns:1fr!important;grid-template-rows:none!important}#main-content [data-jkt-s2type="Picture Tiles"]>.w-richtext h3,#main-content [data-jkt-s2type="Picture Tiles"]>.w-richtext p{grid-column:auto!important;grid-row:auto!important}}
+
+/* Keep the live concierge cards aligned after the CMS content is rendered. */
+#main-content #jkt-concierge-live-flow .jkt-live-flow-copy{display:grid!important;grid-template-rows:65px auto!important;align-content:start!important;box-sizing:border-box!important;min-height:239px!important}
+#main-content #jkt-concierge-live-flow .jkt-live-flow-copy h3{grid-row:1!important;margin:0!important}
+#main-content #jkt-concierge-live-flow .jkt-live-flow-copy p{grid-row:2!important;margin:0!important}
+@media(max-width:991px){#main-content #jkt-concierge-live-flow .jkt-live-flow-copy{display:block!important;min-height:0!important}#main-content #jkt-concierge-live-flow .jkt-live-flow-copy h3{margin:0 0 14px!important}}
+
+/* Use one quiet divider between service rows, never a double rule. */
+#main-content .jkt-live-ledger .jkt-lrow{border:0!important}
+#main-content .jkt-live-ledger .jkt-lrow+.jkt-lrow{border-top:1px solid rgba(40,35,30,.14)!important}
+
+/* Long service inventories use a compact, line-free two-column grid. */
+#main-content .jkt-live-ledger>.w-richtext{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;column-gap:clamp(32px,5vw,72px)!important;row-gap:0!important;align-items:start!important;border-top:0!important}
+#main-content .jkt-live-ledger .jkt-lrow{display:grid!important;grid-template-columns:34px minmax(0,1fr)!important;grid-template-rows:auto auto!important;column-gap:14px!important;row-gap:12px!important;box-sizing:border-box!important;min-width:0!important;margin:0!important;padding:30px 0 36px!important;border:0!important}
+#main-content .jkt-live-ledger .jkt-lnum{grid-column:1!important;grid-row:1!important;align-self:baseline!important;color:#8a7354!important;font-size:10px!important;letter-spacing:.15em!important;line-height:1.4!important}
+#main-content .jkt-live-ledger .jkt-lrow h3{grid-column:2!important;grid-row:1!important;margin:0!important;color:#28231e!important;font-size:20px!important;line-height:1.18!important}
+#main-content .jkt-live-ledger .jkt-lrow p{grid-column:2!important;grid-row:2!important;margin:0!important;padding:0!important;border:0!important;color:#514940!important;font-size:15px!important;line-height:1.62!important}
+@media(max-width:991px){#main-content .jkt-live-ledger>.w-richtext{grid-template-columns:1fr!important;column-gap:0!important}#main-content .jkt-live-ledger .jkt-lrow{padding:26px 0 30px!important}}
+
+/* Apply the compact grid to the visible service inventory as well. */
+#main-content .jkt-ledger>.w-richtext{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;column-gap:clamp(32px,5vw,72px)!important;row-gap:0!important;align-items:start!important;border-top:0!important}
+#main-content .jkt-ledger>.w-richtext>.jkt-lrow{display:grid!important;grid-column:auto!important;grid-row:auto!important;grid-template-columns:34px minmax(0,1fr)!important;grid-template-rows:auto auto!important;column-gap:14px!important;row-gap:12px!important;box-sizing:border-box!important;min-width:0!important;margin:0!important;padding:30px 0 36px!important;border:0!important}
+#main-content .jkt-ledger>.w-richtext>.jkt-lrow .jkt-lnum{grid-column:1!important;grid-row:1!important;align-self:baseline!important;color:#8a7354!important;font-size:10px!important;letter-spacing:.15em!important;line-height:1.4!important}
+#main-content .jkt-ledger>.w-richtext>.jkt-lrow h3{grid-column:2!important;grid-row:1!important;margin:0!important;color:#28231e!important;font-size:20px!important;line-height:1.18!important}
+#main-content .jkt-ledger>.w-richtext>.jkt-lrow p{grid-column:2!important;grid-row:2!important;margin:0!important;padding:0!important;border:0!important;color:#514940!important;font-size:15px!important;line-height:1.62!important}
+@media(max-width:991px){#main-content .jkt-ledger>.w-richtext{grid-template-columns:1fr!important;column-gap:0!important}#main-content .jkt-ledger>.w-richtext>.jkt-lrow{padding:26px 0 30px!important}}
+
+/* The detail grid is organized by space rather than visible cell rules. */
+#main-content .jkt-restored-grid{gap:clamp(18px,2.5vw,32px)!important;border:0!important;background:transparent!important}
+#main-content .jkt-restored-card{border:0!important;background:transparent!important;box-shadow:none!important}
+
+/* Clean, line-free service ledgers: preserve the paired grid without stacked dividers. */
+#main-content .jkt-ledger>.w-richtext,#main-content .jkt-ledger>.w-richtext>h3,#main-content .jkt-ledger>.w-richtext>p{border-top:0!important;border-bottom:0!important;outline:0!important;box-shadow:none!important;background-image:none!important}
+#main-content .jkt-ledger>.w-richtext>p{padding-bottom:0!important;margin-bottom:30px!important}
+#main-content .jkt-ledger>.w-richtext>h3::before,#main-content .jkt-ledger>.w-richtext>h3::after,#main-content .jkt-ledger>.w-richtext>p::before,#main-content .jkt-ledger>.w-richtext>p::after{content:none!important;display:none!important;border:0!important;box-shadow:none!important}
+
+/* Subtle precision pass: a little less air, a little more definition. */
+#main-content .jkt-mast{min-height:680px!important}
+#main-content .jkt-mast-img{min-height:680px!important}
+#main-content .jkt-mast-inner{padding:clamp(40px,6vw,92px)!important}
+#main-content .jkt-mast-h1{margin-bottom:22px!important;letter-spacing:-.032em!important;line-height:.98!important}
+#main-content .jkt-mast-sub{line-height:1.62!important}
+#main-content .jkt-sec{padding-top:96px!important;padding-bottom:96px!important}
+#main-content .jkt-live-ledger .jkt-lrow{gap:10px 14px!important;padding:26px 0 30px!important}
+#main-content .jkt-live-ledger .jkt-lrow h3{font-size:21px!important;line-height:1.12!important;letter-spacing:-.014em!important}
+#main-content .jkt-live-ledger .jkt-lrow p{font-size:15px!important;line-height:1.58!important}
+
+/* Apply the same restraint to the generated service rows. */
+#main-content .jkt-ledger.jkt-live-ledger>.w-richtext>.jkt-lrow{gap:10px 14px!important;padding:26px 0 30px!important}
+#main-content .jkt-ledger.jkt-live-ledger>.w-richtext>.jkt-lrow h3{font-size:21px!important;line-height:1.12!important;letter-spacing:-.014em!important}
+#main-content .jkt-ledger.jkt-live-ledger>.w-richtext>.jkt-lrow p{font-size:15px!important;line-height:1.58!important}
+
+/* JKT-PHASE1-SERVICE-TABLET-MASTHEAD-2026-09-27 rev 2: at Webflow's tablet breakpoint keep the desktop split
+   (image left, copy right) inside the existing 680px hero. Cause: the <=991px rule switches .jkt-mast to display:block while the base
+   template keeps height:clamp(400px,62vw,560px) + overflow:hidden and min-height:680px, so the stacked copy fell below 680px and was clipped. */
+@media (min-width:768px) and (max-width:991px){
+  #main-content .jkt-mast{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,1fr);height:auto}
+  #main-content .jkt-mast-img{height:100%}
+}
