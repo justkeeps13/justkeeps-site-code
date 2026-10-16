@@ -1,0 +1,16 @@
+/* jkt-password-design-2026-09-04 */
+*{box-sizing:border-box}body{min-height:100svh;margin:0;display:grid;grid-template-rows:auto 1fr auto;background:#f4efe8;color:#1b2023;font-family:Arial,sans-serif}.jkt-password-header,.jkt-password-footer{display:flex;width:min(100% - 3rem,82rem);margin-inline:auto;align-items:center;justify-content:space-between}.jkt-password-header{min-height:6.5rem;border-bottom:1px solid rgba(27,32,35,.22)}.jkt-password-brand{color:inherit;text-decoration:none;font-family:Georgia,serif;font-size:1.1rem;letter-spacing:.3em}.jkt-password-brand small{display:block;margin-top:.25rem;font-family:Arial,sans-serif;font-size:.45rem;letter-spacing:.52em;text-align:center}.jkt-password-stage{display:grid;place-items:center;padding:clamp(4rem,10vw,8rem) 1.5rem}.jkt-password-stage #email-form{width:min(100%,33rem);padding:clamp(2rem,5vw,4rem);border:1px solid rgba(27,32,35,.22);background:rgba(255,255,255,.22);text-align:left}.jkt-password-stage #email-form>img{display:none}.jkt-password-kicker{margin:0 0 1.25rem;font-size:.69rem;letter-spacing:.23em;text-transform:uppercase}.jkt-password-stage h1{margin:0 0 1rem;font-family:Georgia,serif;font-size:clamp(2.8rem,6vw,4.8rem);font-weight:400;line-height:.96;letter-spacing:-.035em}.jkt-password-copy{margin:0 0 2rem;line-height:1.65}.jkt-password-stage label{display:block;margin-bottom:.5rem;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase}.jkt-password-stage input[type=password]{width:100%;height:3.5rem;margin:0 0 1rem;padding:.75rem 0;border:0;border-bottom:1px solid rgba(27,32,35,.35);border-radius:0;background:transparent;font-size:16px}.jkt-password-stage input[type=password]:focus{outline:2px solid #8f7758;outline-offset:4px}.jkt-password-stage input[type=submit]{min-height:3.35rem;padding:.8rem 1.35rem;border:1px solid #1b2023;border-radius:0;background:transparent;color:#1b2023;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}.jkt-password-stage .w-form-fail{margin-top:1rem;padding:.85rem;border:1px solid #9a4a45;background:transparent;color:#7f302b}.jkt-password-footer{min-height:4.5rem;border-top:1px solid rgba(27,32,35,.22);font-size:.72rem}.jkt-password-footer a{color:inherit;text-decoration:none}@media(max-width:479px){.jkt-password-header,.jkt-password-footer{width:min(100% - 2rem,82rem)}.jkt-password-header{min-height:5.25rem}.jkt-password-stage{padding:2.5rem 1rem}.jkt-password-stage #email-form{padding:2rem 1.25rem}.jkt-password-footer{min-height:4rem}}
+
+/* jkt-password-flow-height-fix-2026-09-05 */
+html[data-wf-page="6a9a713d0474b164f6e74b2a"] body .utility-page-wrap {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  align-self: stretch !important;
+}
+
+/* jkt-password-privacy-clearance-2026-09-05 */
+html[data-wf-page="6a9a713d0474b164f6e74b2a"] body .jkt-password-footer {
+  padding-inline-start: clamp(4.5rem, 7vw, 6rem);
+}
