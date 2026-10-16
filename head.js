@@ -219,7 +219,7 @@ try{
 (function () {
   "use strict";
   var linkId = "jkt-skip-link-20261013";
-  var mainId = "main-content";
+  var mainId = "jkt-main"; /* matches the older registered skip link so the id no longer depends on script timing */
 
   function installSkipLink() {
     if (!document.body || document.getElementById(linkId)) return;
