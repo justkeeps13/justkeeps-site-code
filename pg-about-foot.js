@@ -1,0 +1,5 @@
+/* jkt-about-quote-semantics-script-2026-09-05 */
+try{
+(function(){function repair(){if(document.documentElement.getAttribute("data-wf-page")!=="6a2ba2e45e1c44ad056e3845")return;var old=document.querySelector(".philosophy_title h2");if(!old||old.dataset.jktQuoteRepaired)return;var quote=document.createElement("blockquote");quote.className=(old.className?old.className+" ":"")+"jkt-about-philosophy-quote";quote.dataset.jktQuoteRepaired="true";quote.innerHTML=old.innerHTML;old.replaceWith(quote);var author=document.querySelector(".philosophy_title .text-size-small");if(author&&author.textContent.trim()==="Justin"){var cite=document.createElement("cite");cite.className=(author.className?author.className+" ":"")+"jkt-about-philosophy-cite";cite.textContent=author.textContent;author.replaceWith(cite);}}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",repair,{once:true});else repair();})();
+}catch(e){console.warn("jkt page block failed: jkt-about-quote-semantics-script-2026-09-05",e)}

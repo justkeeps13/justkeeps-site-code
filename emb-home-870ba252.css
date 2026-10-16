@@ -1,0 +1,8 @@
+/* emb-home-870ba252 block 1 */
+.jkt-guide-access{display:flex;flex-direction:column;align-items:center;gap:.75rem;margin-top:1.1rem}
+.jkt-guide-access-link{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.8rem 1.25rem;border:1px solid currentColor;color:inherit;text-decoration:none;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;line-height:1.3;text-align:center}
+.jkt-guide-access-note{margin:0;font-size:.82rem;line-height:1.5;opacity:.72}
+@media(max-width:479px){.jkt-guide-access-link{width:100%;padding:.8rem .9rem}}
+
+/* emb-home-870ba252 block 3 */
+#jkt-home-master-content [data-jkh-slot="guides"] .your_guide_form_radio_button_field{display:grid!important;grid-template-columns:1.2rem minmax(0,1fr)!important;align-items:center!important;column-gap:.75rem!important;box-sizing:border-box!important}#jkt-home-master-content [data-jkh-slot="guides"] .your_guide_form_radio_button_field>.w-radio-input{position:static!important;inset:auto!important;width:1.15rem!important;height:1.15rem!important;margin:0!important;transform:none!important}#jkt-home-master-content [data-jkh-slot="guides"] .your_guide_form_radio_button_field>.w-form-label{margin:0!important;padding:0!important}

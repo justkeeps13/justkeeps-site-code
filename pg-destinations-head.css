@@ -1,0 +1,46 @@
+/* jkt-destinations-region-rhythm-2026-08-28 */
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .destinations_wrapper {
+  scroll-margin-top: 7rem;
+}
+
+
+
+
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .destinations_wrapper .padding-section-medium {
+  padding-top: 4.75rem;
+  padding-bottom: 4.75rem;
+}
+
+
+
+
+html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .destinations_wrapper .padding-section-medium.padding-section-bottom-none {
+  padding-bottom: 0;
+}
+
+
+
+
+@media (max-width: 991px) {
+  html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .destinations_wrapper {
+    scroll-margin-top: 6.5rem;
+  }
+
+
+
+
+  html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .destinations_wrapper .padding-section-medium {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  html[data-wf-page="6a2bd4ee7e0c8c8a15b02699"] .destinations_wrapper {
+
+
+  }
+}
