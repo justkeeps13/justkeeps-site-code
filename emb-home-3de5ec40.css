@@ -1,0 +1,85 @@
+/* emb-home-3de5ec40 block 1 */
+.hero-video-wrap,
+.hero_poster,
+.hero_video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+}
+
+.hero_poster,
+.hero_video{
+    object-fit:cover;
+}
+
+.hero_poster{
+    z-index:1;
+    transition:opacity .6s ease;
+}
+
+.hero_poster.hide{
+    opacity:0;
+}
+
+.hero-video-wrap{
+    z-index:2;
+}
+
+.hero_video{
+    opacity:0;
+    transition:opacity .6s ease;
+}
+
+.hero_video.loaded{
+    opacity:1;
+}
+
+.bg_overlay{
+    position:absolute;
+    inset:0;
+    z-index:3;
+}
+
+/* JKT-HOME-HERO-CTA-GUARD-2026-09-27
+   Critical first-render layout: action row must always remain inside its hero. */
+.hero_wrapper{height:auto!important;min-height:100svh!important}
+.hero_wrapper .padding-section-large.padding-bottom-none{padding-bottom:clamp(3.5rem,8vh,5rem)!important}
+.hero_wrapper .button-group.is-center{flex-wrap:wrap!important}
+
+/* JKT-HOME-HERO-FOLD-FIT-2026-09-27
+   Lift the entire copy/action group enough to keep it above the fold.
+   The clamp preserves the established -3rem desktop position while giving
+   short desktop viewports up to -5.5rem of additional lift. */
+@media (min-width:992px){
+    .hero_wrapper .hero_wrap{
+        transform:translateY(clamp(-5.5rem,calc(27.6svh - 15.42rem),-3rem))!important
+    }
+}
+
+/* JKT-HOME-INTRO-NO-RULE-2026-09-27: approved intro has no separator above its eyebrow. */
+html[data-wf-page][data-wf-page] body.jkt-home-master #jkt-home-master-content .jkh-intro__grid{border-top:0!important}
+
+/* JKT-HOME-GUIDE-FIRST-PAINT-2026-09-27: native form colors before guide markup/slot reparenting. */
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] .expert_guides_wrapper{background:#f7f4ef!important;color:#1d212b!important;border-block:1px solid rgba(29,33,43,.14)!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] .expert_guides_wrapper .expert_guides .tagline,html[data-wf-page="6a1f886748e8c1c8bceca3b9"] .expert_guides_wrapper .expert_guides .size_10{color:rgba(29,33,43,.66)!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] .expert_guides_wrapper .expert_guides h2{color:#1d212b!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] .expert_guides_wrapper .expert_guides_pag{color:rgba(29,33,43,.78)!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] .expert_guides_wrapper .your_guide_wrap{background:#1d212b!important;color:#f7f4ef!important;border:0!important;box-shadow:none!important}
+
+/* JKT-HOME-GUIDE-TAGLINE-CONTRAST-2026-10-11: 11px muted tagline on #f7f4ef measured 4.43:1. 66% ink gives about 5.0:1. Outranks the .62 rule in the page footer block jkt-home-guide-authoritative-2026-09-27. */
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .expert_guides .tagline,html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .expert_guides .size_10{color:rgba(29,33,43,.66)!important}
+
+/* JKT-HOME-PRINCIPLE-NOWRAP-2026-10-11: the head rule ".jkh-principle span" (meant for the 01/02/03 labels) was also shrinking the anti-widow nowrap span at the end of each principle sentence to 10.5px at 48% ink. Spans inside the paragraph now inherit the paragraph type. */
+#jkt-home-master-content .jkh-principle p span{color:inherit;font-size:inherit;letter-spacing:inherit}
+
+/* JKT-HOME-GUIDE-COMPACT-2026-10-11: desktop and tablet guide section was about 750px tall and filled the screen. Tighter section padding, tiles, fields and button bring it to about 620px. Mobile layout unchanged. Outranks jkt-home-guide-authoritative-2026-09-27 in the page footer. */
+@media (min-width:768px){
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .expert-guides-padding{padding-block:clamp(2.75rem,4.5vw,3.75rem)!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .your_guide_wrap{padding:1.5rem!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .your_guide_form{gap:.6rem!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .your_guide_form_radio_button_field{min-height:2.85rem!important;padding:.55rem .75rem!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .your_guide_form_input{min-height:2.75rem!important;height:2.75rem!important;padding:.55rem .8rem!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .your_guide_form > .w-button{min-height:2.85rem!important;padding:.6rem 1rem!important}
+html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body #jkt-home-master-content [data-jkh-slot="guides"] .expert_guides_wrapper .expert_guides h2{font-size:clamp(2.4rem,4.2vw,4rem)!important}
+}

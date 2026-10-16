@@ -1,0 +1,67 @@
+/* jkt-press-native-cards-and-transcripts-2026-09-02 */
+.jkt-press-native-list>.w-embed{display:contents}
+#press-coverage .jkt-press-native-item{min-width:0;border:1px solid rgba(44,38,32,.14);background:#fffdf9;box-shadow:0 18px 46px rgba(44,38,32,.075);overflow:hidden;transition:transform .24s ease,box-shadow .24s ease}
+#press-coverage .jkt-press-native-item:first-of-type{grid-column:1;grid-row:1/span 3}
+#press-coverage .jkt-press-native-item:not(:first-of-type){grid-column:2}
+#press-coverage .jkt-press-native-link{display:grid;grid-template-columns:clamp(7.75rem,11vw,9.5rem) minmax(0,1fr);height:100%;color:inherit;text-decoration:none}
+#press-coverage .jkt-press-native-item:first-of-type .jkt-press-native-link{display:flex;flex-direction:column}
+#press-coverage .jkt-press-native-media{position:relative;display:grid;place-items:center;min-width:0;margin:0;overflow:hidden;background:#eee9e1}
+#press-coverage .jkt-press-native-item:first-of-type .jkt-press-native-media{aspect-ratio:1372/1644;border-bottom:1px solid rgba(44,38,32,.1)}
+#press-coverage .jkt-press-native-item:not(:first-of-type) .jkt-press-native-media{min-height:100%;border-right:1px solid rgba(44,38,32,.1)}
+#press-coverage .jkt-press-native-media img,
+#press-coverage .jkt-press-native-item:first-of-type .jkt-press-native-media img{display:block;width:100%;height:100%;object-fit:contain!important;object-position:center!important;background:#f4f0ea}
+#press-coverage .jkt-press-native-item .jkt-press-card{display:flex;flex-direction:column;min-width:0;height:100%;padding:clamp(1.35rem,2.4vw,2rem)}
+#press-coverage .jkt-press-native-item .jkt-press-card:before{margin-bottom:1rem}
+#press-coverage .jkt-press-native-item .jkt-press-card__title{max-width:100%;margin:.6rem 0 .7rem!important;font-family:inherit;font-size:clamp(1.25rem,1.55vw,1.6rem)!important;font-weight:400;line-height:1.15!important;overflow-wrap:anywhere}
+#press-coverage .jkt-press-native-item:first-of-type .jkt-press-card__title{font-size:clamp(1.75rem,2.35vw,2.25rem)!important}
+#press-coverage .jkt-press-native-item .jkt-press-card__summary{margin:0 0 .9rem;font-size:.94rem;line-height:1.58}
+#press-coverage .jkt-press-card__cta{display:inline-flex;align-items:center;gap:.45rem;margin-top:auto;color:#6d5032;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+#press-coverage .jkt-press-card__cta:after{content:"→";font-size:1rem;transition:transform .2s ease}
+#press-coverage .jkt-press-native-link:focus-visible{outline:3px solid #9d744a;outline-offset:-3px}
+#press-coverage .jkt-press-transcripts{grid-column:1/-1;display:grid;gap:.85rem;margin-top:clamp(.5rem,1.5vw,1rem)}
+#press-coverage .jkt-press-transcript{border:1px solid rgba(44,38,32,.14);background:#fffdf9}
+#press-coverage .jkt-press-transcript summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.5rem 1.5rem;align-items:center;padding:1.25rem 1.4rem;cursor:pointer;list-style:none}
+#press-coverage .jkt-press-transcript summary::-webkit-details-marker{display:none}
+#press-coverage .jkt-press-transcript summary:after{content:"Read transcript +";color:#6d5032;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+#press-coverage .jkt-press-transcript[open] summary:after{content:"Close transcript −"}
+#press-coverage .jkt-press-transcript summary:focus-visible{outline:3px solid #9d744a;outline-offset:-3px}
+#press-coverage .jkt-press-transcript__publication{display:block;color:#7c5a34;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+#press-coverage .jkt-press-transcript__title{display:block;margin-top:.3rem;color:#241f1b;font-family:Georgia,serif;font-size:clamp(1.35rem,2vw,1.8rem);font-weight:400;line-height:1.2}
+#press-coverage .jkt-press-transcript__body{max-width:52rem;padding:0 1.4rem 1.75rem;color:#403b37}
+#press-coverage .jkt-press-transcript__body p{margin:.9rem 0;font-size:1rem;line-height:1.72}
+#press-coverage .jkt-press-transcript__body h3{margin:1.5rem 0 .65rem;font-size:1.18rem;line-height:1.35}
+#press-coverage .jkt-press-transcript__note{padding:.8rem 1rem;border-left:2px solid #a8763e;background:#f4f0ea;font-size:.87rem!important}
+#press-coverage .jkt-press-transcript__source{display:inline-block;margin-top:.8rem;color:#6d5032;font-size:.76rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-underline-offset:.2em}
+@media (hover:hover){
+ #press-coverage .jkt-press-native-item:hover{transform:translateY(-3px);box-shadow:0 24px 58px rgba(44,38,32,.12)}
+ #press-coverage .jkt-press-native-link:hover .jkt-press-card__cta:after{transform:translateX(.2rem)}
+}
+@media screen and (max-width:991px){
+ #press-coverage .jkt-press-native-item:first-of-type,#press-coverage .jkt-press-native-item:not(:first-of-type){grid-column:auto;grid-row:auto}
+ #press-coverage .jkt-press-native-link,#press-coverage .jkt-press-native-item:first-of-type .jkt-press-native-link{display:grid;grid-template-columns:minmax(10rem,30%) minmax(0,1fr)}
+ #press-coverage .jkt-press-native-item:first-of-type .jkt-press-native-media{aspect-ratio:auto;min-height:100%;border-right:1px solid rgba(44,38,32,.1);border-bottom:0}
+ #press-coverage .jkt-press-native-item:first-of-type .jkt-press-card__title{font-size:clamp(1.45rem,3vw,1.9rem)!important}
+}
+@media screen and (max-width:767px){
+ #press-coverage .jkt-press-native-link,#press-coverage .jkt-press-native-item:first-of-type .jkt-press-native-link{grid-template-columns:minmax(7.25rem,34%) minmax(0,1fr)}
+ #press-coverage .jkt-press-native-item .jkt-press-card{padding:1.1rem}
+ #press-coverage .jkt-press-native-item .jkt-press-card:before{width:2.25rem;margin-bottom:.7rem}
+ #press-coverage .jkt-press-native-item .jkt-press-card__label,#press-coverage .jkt-press-native-item .jkt-press-card__date{font-size:.64rem;letter-spacing:.1em}
+ #press-coverage .jkt-press-native-item .jkt-press-card__title,#press-coverage .jkt-press-native-item:first-of-type .jkt-press-card__title{font-size:clamp(1.05rem,4.7vw,1.35rem)!important;line-height:1.18!important}
+ #press-coverage .jkt-press-native-item .jkt-press-card__summary{font-size:.82rem;line-height:1.45}
+ #press-coverage .jkt-press-card__cta{font-size:.65rem;letter-spacing:.08em}
+ #press-coverage .jkt-press-transcript summary{grid-template-columns:1fr;padding:1rem}
+ #press-coverage .jkt-press-transcript summary:after{margin-top:.25rem}
+ #press-coverage .jkt-press-transcript__body{padding:0 1rem 1.25rem}
+ #press-coverage .jkt-press-transcript__body p{font-size:.94rem;line-height:1.62}
+}
+@media screen and (max-width:389px){
+ #press-coverage .jkt-press-native-link,#press-coverage .jkt-press-native-item:first-of-type .jkt-press-native-link{grid-template-columns:6.75rem minmax(0,1fr)}
+ #press-coverage .jkt-press-native-item .jkt-press-card{padding:.9rem}
+}
+@media (prefers-reduced-motion:reduce){
+ #press-coverage .jkt-press-native-item,#press-coverage .jkt-press-card__cta:after{transition:none}
+}
+
+/* Keep the MoneyLion mark on a full black tile in the As Featured In grid. */
+.jkt-featured-media-grid-final a[href="https://www.moneylion.com/trending/money/florida-cities-cheap-luxury-vacation"]{background:#000}
