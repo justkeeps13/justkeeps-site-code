@@ -1,0 +1,168 @@
+/* jkt-guide-type-v1 */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body{background:#F8F4EF}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .bio_wrap h2{font-weight:400 !important;font-size:clamp(1.72rem,2.9vw,2.62rem) !important;line-height:1.08 !important;letter-spacing:-.012em !important;color:#1D212B !important;text-wrap:balance}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .bio_wrap h3{font-weight:400 !important;font-size:clamp(1.18rem,1.62vw,1.5rem) !important;line-height:1.16 !important;letter-spacing:-.006em !important;color:#1D212B !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .bio_wrap p,
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .bio_wrap li{font-size:clamp(1rem,1.06vw,1.075rem) !important;line-height:1.68 !important;color:#3E3A34 !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .bio_wrap strong{color:#1D212B}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .bio_wrap a{color:#8A6A3B;text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:1px}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body #jkt-faq{max-width:768px;margin-left:auto;margin-right:auto}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body #jkt-faq h2{font-weight:400 !important;font-size:clamp(1.72rem,2.9vw,2.62rem) !important;line-height:1.08 !important;letter-spacing:-.012em !important;color:#1D212B !important;margin:clamp(3.2rem,5vw,4.6rem) 0 1.4rem !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body #jkt-faq h3{font-weight:400 !important;font-size:clamp(1.18rem,1.62vw,1.5rem) !important;line-height:1.16 !important;color:#1D212B !important;margin:clamp(1.9rem,2.8vw,2.5rem) 0 .55rem !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body #jkt-faq p{font-size:clamp(1rem,1.06vw,1.075rem) !important;line-height:1.68 !important;color:#3E3A34 !important;margin:0 0 1.15rem !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper hr{display:none !important}
+
+/* jkt-guide-navbleed-v1 */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .navbar:not(.fixed){background-color:transparent !important;background-image:none !important;box-shadow:none !important;-webkit-backdrop-filter:none !important;backdrop-filter:none !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .navbar:not(.fixed) .white_brand_logo{opacity:1 !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .navbar:not(.fixed) .black_brand_logo{opacity:0 !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .navbar:not(.fixed) .header-nav-link{color:#FBF6F2 !important;text-shadow:0 1px 12px rgba(8,10,14,.55)}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .navbar:not(.fixed) .header-nav-link.contact_us_btn{color:#FBF6F2 !important;border-color:rgba(251,246,242,.6) !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .navbar:not(.fixed) .menu-button-2 .line{background-color:#FBF6F2 !important}
+
+/* jkt-guide-caption-v1 */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap figure.w-richtext-figure-type-image figcaption:before{content:none !important;display:none !important;margin:0 !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap figure.w-richtext-figure-type-image figcaption{font-size:.85rem !important;color:#6B655C !important;letter-spacing:0 !important;text-align:left !important;max-width:768px !important;padding:0 !important}
+
+/* jkt-guide-clearance-v1 */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .journal_template_wrap>.bio_wrap{margin-top:clamp(140px,16vw,240px) !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>a.jkt-back{display:none !important}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>a.transition-all{color:rgba(251,246,242,.82) !important;font-size:.68rem !important;letter-spacing:.2em !important;text-shadow:0 1px 12px rgba(8,10,14,.55)}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>div.text-size-small:not(.short_des){color:rgba(251,246,242,.7) !important;font-size:.66rem !important;letter-spacing:.18em !important;text-shadow:0 1px 12px rgba(8,10,14,.55)}
+
+/* jkt-guide-responsive-clearance-v3 */
+@media (max-width:991px){
+ html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .journal_template_wrap>.bio_wrap{
+  margin-top:280px!important;
+ }
+}
+
+/* jkt-layout-first-content-gap-v1 */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .journal_template_wrap>div.bio_wrap{
+  padding-top:clamp(8px,1vw,14px)!important;
+  position:relative;
+  top:calc(clamp(20px,3vw,40px) * -1);
+  margin-bottom:calc(clamp(20px,3vw,40px) * -1)!important;
+}
+@media (max-width:991px){
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrapper .journal_template_wrap>div.bio_wrap{
+    padding-top:clamp(18px,2.2vw,32px)!important;
+    position:static;
+    top:auto;
+    margin-bottom:0!important;
+  }
+}
+
+/* jkt-destination-subhead-rhythm-v2-2026-09-07 */
+/* Keep every destination subhead over the hero image and restore deliberate editorial spacing in the article. */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.text-color-charcoal.text-size-small{
+  position:relative!important;
+  z-index:3!important;
+  top:clamp(-2.75rem,-3vw,-2rem)!important;
+  color:#fbf6f2!important;
+  text-shadow:0 1px 3px rgba(0,0,0,.9),0 4px 18px rgba(0,0,0,.55)!important;
+}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.bio_wrap{
+  top:calc(clamp(28px,4vw,56px) * -1)!important;
+  margin-bottom:calc(clamp(28px,4vw,56px) * -1)!important;
+}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap>.w-richtext h2{
+  margin-top:clamp(2.5rem,4.2vw,4rem)!important;
+  margin-bottom:0!important;
+}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap>.w-richtext>h2:first-child{
+  margin-top:0!important;
+}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap>.w-richtext h2 + p,
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap>.w-richtext h2 + ul,
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap>.w-richtext h2 + ol{
+  margin-top:clamp(1rem,1.45vw,1.35rem)!important;
+}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .bio_wrap>.w-richtext h2 + .jkt2-figure{
+  margin-top:clamp(1rem,1.45vw,1.35rem)!important;
+}
+@media (max-width:991px){
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.text-color-charcoal.text-size-small{
+    top:-1.5rem!important;
+  }
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.bio_wrap{
+    top:auto!important;
+    margin-bottom:0!important;
+  }
+}
+
+/* jkt-destination-hero-copy-midpoint-v1-2026-09-08 */
+/* Move only the destination hero copy toward the visual midpoint of the image. */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.transition-all.link_block,
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>div:not(.bio_wrap):not(.text-color-charcoal.text-size-small),
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>h1,
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.text-color-charcoal.text-size-small{
+  position:relative!important;
+  top:calc(clamp(160px,18vw,260px) * -1)!important;
+  z-index:3!important;
+}
+@media screen and (max-width:991px){
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.transition-all.link_block,
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>div:not(.bio_wrap):not(.text-color-charcoal.text-size-small),
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>h1,
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>.text-color-charcoal.text-size-small{
+    top:calc(clamp(48px,14vw,96px) * -1)!important;
+  }
+}
+
+/* jkt-destination-anchor-offset-v1-2026-09-08 */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .jkt2-body h2[id^="jkt2-"],
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .jkt2-body h3[id^="jkt2-"]{
+  scroll-margin-top:clamp(14rem,18vw,16rem)!important;
+}
+@media (max-width:991px){
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .jkt2-body h2[id^="jkt2-"],
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .jkt2-body h3[id^="jkt2-"]{
+    scroll-margin-top:clamp(10.5rem,26vw,12rem)!important;
+  }
+}
+
+/* jkt-destination-back-nav-v1-2026-09-08 */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>a.jkt-back{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:.55rem!important;
+  position:relative!important;
+  z-index:5!important;
+  margin:clamp(1rem,2vw,1.5rem) 0 clamp(1.5rem,3vw,2.75rem)!important;
+  padding:.72rem 1rem!important;
+  border:1px solid rgba(251,246,242,.58)!important;
+  border-radius:999px!important;
+  background:rgba(20,24,30,.22)!important;
+  color:#fbf6f2!important;
+  font-size:.7rem!important;
+  line-height:1!important;
+  letter-spacing:.14em!important;
+  text-transform:uppercase!important;
+  text-decoration:none!important;
+  text-shadow:0 1px 8px rgba(0,0,0,.45)!important;
+  transition:background-color .2s ease,border-color .2s ease,transform .2s ease!important;
+}
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>a.jkt-back:hover,
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>a.jkt-back:focus-visible{
+  background:rgba(20,24,30,.5)!important;
+  border-color:#fbf6f2!important;
+  transform:translateY(-1px)!important;
+  outline:2px solid #fbf6f2!important;
+  outline-offset:3px!important;
+}
+@media (max-width:767px){
+  html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body .journal_template_wrap>a.jkt-back{
+    margin-top:.75rem!important;
+    margin-bottom:2rem!important;
+    padding:.68rem .86rem!important;
+    font-size:.62rem!important;
+  }
+}
+
+/* jkt-destination-search-spacing-v1-2026-09-08 */
+/* Tiny visual adjustment: move only the destination search field down slightly. */
+html[data-wf-page="6a3a2752a290eecaf4a9bf36"] body #jkx-q{
+  position:relative!important;
+  top:4px!important;
+}
