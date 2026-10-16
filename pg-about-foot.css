@@ -1,0 +1,348 @@
+/* jkt-about-refinement-2026-09-04 */
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrapper,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_wrapper {
+  height: auto !important;
+  min-height: 0 !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .padding-section-large {
+  padding-top: clamp(4.5rem, 6vw, 6.5rem) !important;
+  padding-bottom: clamp(4.5rem, 6vw, 6.5rem) !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_grid {
+  grid-template-columns: minmax(0, 1.02fr) minmax(22rem, .98fr) !important;
+  align-items: start !important;
+  column-gap: clamp(3rem, 6vw, 6rem) !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_image {
+  position: relative !important;
+  top: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 4 / 5 !important;
+  overflow: hidden !important;
+  background: #e9e2d8 !important;
+  outline: 0 !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_image::before {
+  content: none !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: cover !important;
+  object-position: 50% 50% !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content {
+  width: 100% !important;
+  max-width: 39rem !important;
+  padding-top: clamp(.25rem, 1.2vw, 1rem) !important;
+  gap: clamp(1.1rem, 1.6vw, 1.55rem) !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h2,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h3 {
+  max-width: 12ch !important;
+  margin: 0 !important;
+  font-size: clamp(3rem, 4.3vw, 4.5rem) !important;
+  line-height: .98 !important;
+  letter-spacing: -.035em !important;
+  text-wrap: balance;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content > .text-size-small,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content > p {
+  max-width: 58ch !important;
+  margin-top: 0 !important;
+  line-height: 1.75 !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrapper .padding-section-large.padding-bottom-none {
+  padding-top: clamp(4.5rem, 6.5vw, 7rem) !important;
+  padding-bottom: clamp(4.5rem, 6.5vw, 7rem) !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrap {
+  display: grid !important;
+  grid-template-columns: minmax(16rem, .76fr) minmax(0, 1.24fr) !important;
+  grid-template-rows: auto auto 1fr !important;
+  column-gap: clamp(3rem, 7vw, 7.5rem) !important;
+  row-gap: 1rem !important;
+  align-items: start !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrap > .section_header {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  margin: 0 !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrap > h2 {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  max-width: 10ch !important;
+  margin: 0 !important;
+  font-size: clamp(3rem, 4.6vw, 5rem) !important;
+  line-height: .96 !important;
+  letter-spacing: -.04em !important;
+  text-wrap: balance;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid {
+  grid-column: 2 !important;
+  grid-row: 1 / span 3 !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: clamp(2.75rem, 4.5vw, 4.5rem) clamp(2rem, 4vw, 4rem) !important;
+  min-height: 0 !important;
+  align-content: start !important;
+  border: 0 !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid .our_process_item {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  gap: .85rem !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid .our_process_item_border,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid .our_process_item::before,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid .our_process_item::after {
+  display: none !important;
+  content: none !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid h3,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid h4 {
+  margin: 0 !important;
+  font-size: clamp(1.7rem, 2.15vw, 2.15rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.015em !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid .text-size-small {
+  max-width: 34ch !important;
+  color: rgba(34,34,34,.74) !important;
+  line-height: 1.7 !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_wrapper .padding-section-large {
+  padding-top: clamp(3.5rem, 5vw, 5rem) !important;
+  padding-bottom: clamp(3.5rem, 5vw, 5rem) !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_top_grid {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr) !important;
+  align-items: stretch !important;
+  gap: clamp(2rem, 4vw, 4.5rem) !important;
+  min-height: 0 !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_title {
+  min-height: 0 !important;
+  padding: clamp(2.75rem, 4vw, 4.25rem) !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_title h2 {
+  max-width: 17ch !important;
+  margin: 0 !important;
+  font-size: clamp(2.45rem, 3.2vw, 3.1rem) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -.035em !important;
+  text-wrap: balance;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_image_wrap {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 4 / 3 !important;
+  overflow: hidden !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: cover !important;
+  object-position: 50% 42% !important;
+}
+@media screen and (max-width: 991px) {
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    row-gap: 2.75rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_image {
+    aspect-ratio: 5 / 4 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content {
+    max-width: 44rem !important;
+    padding-top: 0 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrap {
+    display: block !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrap > .section_header {
+    margin-bottom: .9rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrap > h2 {
+    max-width: 13ch !important;
+    margin-bottom: 3rem !important;
+    font-size: clamp(3rem, 7vw, 4.6rem) !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2.75rem 3rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_top_grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1.75rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_image_wrap {
+    aspect-ratio: 16 / 10 !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .padding-section-large,
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrapper .padding-section-large.padding-bottom-none {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_grid {
+    row-gap: 2.25rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_image {
+    aspect-ratio: 4 / 3 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h2,
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h3 {
+    font-size: clamp(2.65rem, 11vw, 3.65rem) !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrap > h2 {
+    margin-bottom: 2.5rem !important;
+    font-size: clamp(2.75rem, 11vw, 3.8rem) !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 2.2rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_grid .text-size-small {
+    max-width: 40rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_wrapper .padding-section-large {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_image_wrap {
+    order: 1 !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_title {
+    order: 2 !important;
+    padding: 2.25rem 1.6rem 2.5rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_title h2 {
+    font-size: clamp(2rem, 8.5vw, 2.65rem) !important;
+  }
+}
+@media screen and (max-width: 479px) {
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .padding-section-large,
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .our_values_wrapper .padding-section-large.padding-bottom-none {
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_image {
+    aspect-ratio: 5 / 4 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_title {
+    padding: 1.9rem 1.25rem 2.15rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] .philosophy_title h2 {
+    font-size: clamp(1.85rem, 9vw, 2.2rem) !important;
+  }
+}
+
+/* jkt-about-mobile-portrait-crop-2026-09-04 */
+@media screen and (max-width: 991px) {
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_img {
+    object-position: 50% 27% !important;
+  }
+}
+
+/* jkt-about-approved-bio-responsive-2026-09-05 */
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_grid,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content{
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content{
+  align-self:start!important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h2{
+  max-width:15ch!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+  hyphens:none!important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content>.text-size-small,
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content>p{
+  position:static!important;
+  width:100%!important;
+  max-width:60ch!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:0!important;
+  overflow:visible!important;
+  -webkit-hyphens:none!important;
+  hyphens:none!important;
+  word-break:normal!important;
+  overflow-wrap:normal!important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .button-group{
+  width:100%!important;
+  margin-top:.35rem!important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .button-group a{
+  white-space:normal!important;
+  text-align:center!important;
+  line-height:1.35!important;
+}
+@media screen and (max-width:991px){
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content{
+    width:100%!important;
+    max-width:46rem!important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h2{
+    max-width:17ch!important;
+  }
+}
+@media screen and (max-width:767px){
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content{
+    gap:1.15rem!important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h2{
+    max-width:16ch!important;
+    font-size:clamp(2.55rem,10.5vw,3.45rem)!important;
+    line-height:1!important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content>.text-size-small,
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content>p{
+    max-width:none!important;
+    font-size:1.02rem!important;
+    line-height:1.66!important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .button-group a{
+    box-sizing:border-box!important;
+    width:min(100%,28rem)!important;
+    min-height:3.65rem!important;
+    padding:1rem 1.25rem!important;
+  }
+}
+@media screen and (max-width:479px){
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] #about-story .about_content h2{
+    max-width:14ch!important;
+    font-size:clamp(2.35rem,11vw,3rem)!important;
+  }
+}
+
+/* jkt-about-quote-semantics-2026-09-05 */
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] blockquote.jkt-about-philosophy-quote{max-width:17ch!important;margin:0!important;padding:0!important;border:0!important;color:#faf8f5!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:clamp(2.45rem,3.2vw,3.1rem)!important;font-style:normal!important;font-weight:300!important;line-height:1.06!important;letter-spacing:-.035em!important;text-wrap:balance}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] cite.jkt-about-philosophy-cite{font-style:normal}
+@media(max-width:767px){html[data-wf-page="6a2ba2e45e1c44ad056e3845"] blockquote.jkt-about-philosophy-quote{font-size:clamp(2rem,8.5vw,2.65rem)!important}}
+@media(max-width:479px){html[data-wf-page="6a2ba2e45e1c44ad056e3845"] blockquote.jkt-about-philosophy-quote{font-size:clamp(1.85rem,9vw,2.2rem)!important}}
