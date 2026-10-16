@@ -1,0 +1,100 @@
+/* jkt-entertainment-editorial-redesign-2026-10-06 */
+main[data-jkt-entertainment-page="true"]{background:#f7f3ec;color:#1f1a16;overflow:hidden}
+main[data-jkt-entertainment-page="true"] .ent-hero-full{padding:0!important;margin:0!important;background:#111}
+main[data-jkt-entertainment-page="true"] .ent-hero-image{display:block!important;width:100%!important;height:min(74vh,760px)!important;min-height:560px!important;object-fit:cover!important;object-position:center!important;filter:saturate(.88) contrast(1.03)}
+main[data-jkt-entertainment-page="true"] .ent-intro{background:#15120f!important;color:#f7f3ec!important;padding:clamp(72px,8vw,118px) 24px clamp(78px,9vw,132px)!important}
+main[data-jkt-entertainment-page="true"] .ent-intro-wrap{width:min(100%,1180px)!important;margin:0 auto!important;padding:0!important}
+main[data-jkt-entertainment-page="true"] .ent-kicker{margin:0 0 24px!important;color:#b4976d!important;font-size:12px!important;line-height:1.4!important;letter-spacing:.19em!important;text-transform:uppercase!important;font-weight:500!important}
+main[data-jkt-entertainment-page="true"] .ent-title{margin:0!important;max-width:12ch!important;color:#f7f3ec!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(64px,8.2vw,118px)!important;font-weight:400!important;line-height:.94!important;letter-spacing:-.045em!important}
+main[data-jkt-entertainment-page="true"] .ent-lead{margin:34px 0 0!important;max-width:760px!important;color:rgba(247,243,236,.82)!important;font-size:clamp(18px,1.8vw,23px)!important;line-height:1.55!important;font-weight:400!important}
+main[data-jkt-entertainment-page="true"] .ent-button{display:inline-flex!important;margin-top:38px!important;padding:15px 0 10px!important;border:0!important;border-bottom:1px solid rgba(247,243,236,.72)!important;border-radius:0!important;background:transparent!important;color:#f7f3ec!important;font-size:12px!important;letter-spacing:.14em!important;text-transform:uppercase!important;box-shadow:none!important}
+main[data-jkt-entertainment-page="true"] .ent-founder-band{padding:clamp(74px,8vw,118px) 24px!important;background:#ede6dc!important}
+main[data-jkt-entertainment-page="true"] .jk-founder-row{width:min(100%,1180px)!important;margin:0 auto!important;display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;gap:clamp(48px,7vw,92px)!important;align-items:center!important}
+main[data-jkt-entertainment-page="true"] .jk-founder-media{width:100%!important;max-width:520px!important}
+main[data-jkt-entertainment-page="true"] .jk-founder-photo{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important}
+main[data-jkt-entertainment-page="true"] .jk-founder-copy{max-width:620px!important}
+main[data-jkt-entertainment-page="true"] .jk-founder-line{margin:0!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(28px,3.1vw,48px)!important;font-weight:400!important;line-height:1.12!important;letter-spacing:-.025em!important}
+main[data-jkt-entertainment-page="true"] .fish-toc{width:min(100% - 48px,1180px)!important;margin:0 auto!important;padding:28px 0!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;border-top:1px solid rgba(31,26,22,.22)!important;border-bottom:1px solid rgba(31,26,22,.22)!important;background:transparent!important}
+main[data-jkt-entertainment-page="true"] .fish-toc-link{padding:12px 18px 12px 0!important;border:0!important;background:transparent!important;color:#1f1a16!important;font-size:11px!important;letter-spacing:.12em!important;text-transform:uppercase!important;text-decoration:none!important}
+main[data-jkt-entertainment-page="true"] .fishsection{padding:clamp(72px,8vw,112px) 24px!important;background:#f7f3ec!important}
+main[data-jkt-entertainment-page="true"] .ent-content-wrap{width:min(100%,980px)!important;margin:0 auto!important}
+main[data-jkt-entertainment-page="true"] .fishh2,
+main[data-jkt-entertainment-page="true"] .jkh2{margin:0 0 30px!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(42px,5vw,70px)!important;font-weight:400!important;line-height:1.02!important;letter-spacing:-.035em!important}
+main[data-jkt-entertainment-page="true"] .jkcopy,
+main[data-jkt-entertainment-page="true"] .fishcopy{font-size:18px!important;line-height:1.68!important;color:#3f3832!important}
+main[data-jkt-entertainment-page="true"] section[id$="-coordinates"]{background:#171411!important;color:#f6f1e8!important}
+main[data-jkt-entertainment-page="true"] section[id$="-coordinates"] .fishh2,
+main[data-jkt-entertainment-page="true"] section[id$="-coordinates"] .jkh3,
+main[data-jkt-entertainment-page="true"] section[id$="-coordinates"] .fishcopy,
+main[data-jkt-entertainment-page="true"] section[id$="-coordinates"] .jkcopy{color:#f6f1e8!important}
+main[data-jkt-entertainment-page="true"] .ent-services-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;margin-top:52px!important;border-top:1px solid rgba(246,241,232,.28)!important;border-bottom:1px solid rgba(246,241,232,.28)!important}
+main[data-jkt-entertainment-page="true"] .ent-service-card{padding:34px 30px 38px 0!important;border:0!important;border-right:1px solid rgba(246,241,232,.22)!important;background:transparent!important;box-shadow:none!important}
+main[data-jkt-entertainment-page="true"] .ent-service-card:last-child{border-right:0!important;padding-right:0!important;padding-left:30px!important}
+main[data-jkt-entertainment-page="true"] .ent-service-card:nth-child(2){padding-left:30px!important}
+main[data-jkt-entertainment-page="true"] .ent-service-card .jkh3{margin:0 0 16px!important;font-family:Georgia,"Times New Roman",serif!important;font-size:32px!important;font-weight:400!important;line-height:1.08!important;color:#f6f1e8!important}
+main[data-jkt-entertainment-page="true"] .jkent-depth,
+main[data-jkt-entertainment-page="true"] .jkent-market-depth,
+main[data-jkt-entertainment-page="true"] .jkent-related{padding:clamp(72px,8vw,108px) 24px!important;background:#f7f3ec!important}
+main[data-jkt-entertainment-page="true"] .jkent-depth .jkwrap,
+main[data-jkt-entertainment-page="true"] .jkent-market-depth .jkwrap,
+main[data-jkt-entertainment-page="true"] .jkent-related .jkwrap{width:min(100%,980px)!important;margin:0 auto!important}
+main[data-jkt-entertainment-page="true"] .jkent-press{padding:clamp(78px,9vw,126px) 24px!important;background:#15120f!important;color:#f7f3ec!important}
+main[data-jkt-entertainment-page="true"] .jkent-press .jkwrap{width:min(100%,980px)!important;margin:0 auto!important}
+main[data-jkt-entertainment-page="true"] .jkent-press .jkh2,
+main[data-jkt-entertainment-page="true"] .jkent-press .jkcopy,
+main[data-jkt-entertainment-page="true"] .jkent-press a{color:#f7f3ec!important}
+main[data-jkt-entertainment-page="true"] .jkent-eyebrow{color:#b4976d!important;font-size:11px!important;letter-spacing:.18em!important;text-transform:uppercase!important}
+main[data-jkt-entertainment-page="true"] .jkent-quote{margin:48px 0!important;padding:0!important;border:0!important;color:#f7f3ec!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(40px,5.7vw,78px)!important;font-weight:400!important;line-height:1.02!important;letter-spacing:-.035em!important}
+main[data-jkt-entertainment-page="true"] .jkent-related{border-top:1px solid rgba(31,26,22,.18)!important}
+main[data-jkt-entertainment-page="true"] .jkent-related .jkh2{font-size:clamp(32px,3.4vw,48px)!important}
+main[data-jkt-entertainment-page="true"] .fishfaq{background:#efe8de!important}
+main[data-jkt-entertainment-page="true"] .fishfaq .jkh3{margin:34px 0 10px!important;padding-top:28px!important;border-top:1px solid rgba(31,26,22,.18)!important;font-family:Georgia,"Times New Roman",serif!important;font-size:28px!important;font-weight:400!important;line-height:1.15!important}
+main[data-jkt-entertainment-page="true"] section[id$="-start"]{background:#15120f!important;color:#f7f3ec!important;text-align:center!important}
+main[data-jkt-entertainment-page="true"] section[id$="-start"] .ent-content-wrap{max-width:840px!important}
+main[data-jkt-entertainment-page="true"] section[id$="-start"] .fishh2,
+main[data-jkt-entertainment-page="true"] section[id$="-start"] .fishcopy{color:#f7f3ec!important}
+@media(max-width:991px){
+ main[data-jkt-entertainment-page="true"] .jk-founder-row{grid-template-columns:1fr!important}
+ main[data-jkt-entertainment-page="true"] .jk-founder-media{max-width:560px!important}
+ main[data-jkt-entertainment-page="true"] .fish-toc{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ main[data-jkt-entertainment-page="true"] .ent-services-grid{grid-template-columns:1fr!important}
+ main[data-jkt-entertainment-page="true"] .ent-service-card,
+ main[data-jkt-entertainment-page="true"] .ent-service-card:nth-child(2),
+ main[data-jkt-entertainment-page="true"] .ent-service-card:last-child{padding:28px 0!important;border-right:0!important;border-bottom:1px solid rgba(246,241,232,.22)!important}
+}
+@media(max-width:767px){
+ main[data-jkt-entertainment-page="true"] .ent-hero-image{height:56vh!important;min-height:390px!important}
+ main[data-jkt-entertainment-page="true"] .ent-title{font-size:clamp(52px,15vw,76px)!important;max-width:11ch!important}
+ main[data-jkt-entertainment-page="true"] .ent-intro{padding-left:20px!important;padding-right:20px!important}
+ main[data-jkt-entertainment-page="true"] .ent-founder-band{padding-left:20px!important;padding-right:20px!important}
+ main[data-jkt-entertainment-page="true"] .fish-toc{width:calc(100% - 40px)!important;grid-template-columns:1fr!important}
+ main[data-jkt-entertainment-page="true"] .fishsection,
+ main[data-jkt-entertainment-page="true"] .jkent-depth,
+ main[data-jkt-entertainment-page="true"] .jkent-market-depth,
+ main[data-jkt-entertainment-page="true"] .jkent-related,
+ main[data-jkt-entertainment-page="true"] .jkent-press{padding-left:20px!important;padding-right:20px!important}
+ main[data-jkt-entertainment-page="true"] .jkcopy,
+ main[data-jkt-entertainment-page="true"] .fishcopy{font-size:17px!important}
+ main[data-jkt-entertainment-page="true"] .jkent-quote{font-size:clamp(38px,11vw,58px)!important}
+}
+
+/* jkt-entertainment-final-polish-2026-10-06 */
+main[data-jkt-entertainment-page="true"] .ent-mid-cta{padding:58px 24px;background:#b4976d;color:#171411}
+main[data-jkt-entertainment-page="true"] .ent-mid-cta__wrap{width:min(100%,980px);margin:0 auto}
+main[data-jkt-entertainment-page="true"] .ent-mid-cta__eyebrow{margin:0 0 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+main[data-jkt-entertainment-page="true"] .ent-mid-cta__title{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(40px,5vw,68px);font-weight:400;line-height:1;letter-spacing:-.035em}
+main[data-jkt-entertainment-page="true"] .ent-mid-cta__copy{margin:22px 0 0;max-width:720px;font-size:18px;line-height:1.6}
+main[data-jkt-entertainment-page="true"] .ent-mid-cta__link{display:inline-block;margin-top:26px;padding-bottom:7px;border-bottom:1px solid currentColor;color:inherit;text-decoration:none;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+main[data-jkt-entertainment-page="true"] .fishfaq .jkt-faq-accordion{border-top:1px solid rgba(31,26,22,.18)}
+main[data-jkt-entertainment-page="true"] .fishfaq details{border-bottom:1px solid rgba(31,26,22,.18);padding:0}
+main[data-jkt-entertainment-page="true"] .fishfaq summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:18px;align-items:center;padding:24px 0}
+main[data-jkt-entertainment-page="true"] .fishfaq summary::-webkit-details-marker{display:none}
+main[data-jkt-entertainment-page="true"] .fishfaq summary:after{content:"+";font-size:26px;font-weight:300;line-height:1;text-align:right}
+main[data-jkt-entertainment-page="true"] .fishfaq details[open] summary:after{content:"−"}
+main[data-jkt-entertainment-page="true"] .fishfaq .jkt-faq-question{margin:0!important;padding:0!important;border:0!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(24px,2.4vw,32px)!important;font-weight:400!important;line-height:1.15!important}
+main[data-jkt-entertainment-page="true"] .fishfaq .jkt-faq-answer{margin:0 0 26px!important;max-width:820px}
+@media(max-width:767px){
+ main[data-jkt-entertainment-page="true"] .ent-mid-cta{padding:48px 20px}
+ main[data-jkt-entertainment-page="true"] .ent-mid-cta__copy{font-size:17px}
+ main[data-jkt-entertainment-page="true"] .fishfaq summary{padding:20px 0}
+}
