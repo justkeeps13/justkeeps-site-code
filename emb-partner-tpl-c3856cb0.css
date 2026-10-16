@@ -1,0 +1,74 @@
+/* jkt-partner-program-layout-2026-09-12 */
+/* Scoped to the Partner Programs template */
+body:has(.hero-heading-left) .navbar-logo-left-container {
+  box-sizing: border-box;
+  height: 96px;
+  min-height: 96px;
+  padding: 12px 30px;
+  position: relative;
+  z-index: 10;
+}
+body:has(.hero-heading-left) .navbar-wrapper {
+  box-sizing: border-box;
+  height: 72px;
+  min-height: 72px;
+  align-items: center;
+}
+body:has(.hero-heading-left) .navbar-brand {
+  width: 190px;
+  height: auto;
+  flex: 0 0 auto;
+}
+body:has(.hero-heading-left) .navbar-brand img {
+  display: block;
+  width: 190px;
+  height: auto;
+  max-height: 68px;
+  object-fit: contain;
+}
+body:has(.hero-heading-left) .hero-heading-left {
+  box-sizing: border-box;
+  padding-top: 72px;
+}
+@media screen and (max-width: 991px) {
+  body:has(.hero-heading-left) .navbar-logo-left-container {
+    height: 80px;
+    min-height: 80px;
+    padding: 10px 24px;
+  }
+  body:has(.hero-heading-left) .navbar-wrapper {
+    height: 60px;
+    min-height: 60px;
+  }
+  body:has(.hero-heading-left) .navbar-brand,
+  body:has(.hero-heading-left) .navbar-brand img {
+    width: 155px;
+  }
+  body:has(.hero-heading-left) .navbar-brand img {
+    max-height: 56px;
+  }
+  body:has(.hero-heading-left) .hero-heading-left {
+    padding-top: 56px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body:has(.hero-heading-left) .navbar-logo-left-container {
+    height: 72px;
+    min-height: 72px;
+    padding: 9px 20px;
+  }
+  body:has(.hero-heading-left) .navbar-wrapper {
+    height: 54px;
+    min-height: 54px;
+  }
+  body:has(.hero-heading-left) .navbar-brand,
+  body:has(.hero-heading-left) .navbar-brand img {
+    width: 140px;
+  }
+  body:has(.hero-heading-left) .navbar-brand img {
+    max-height: 48px;
+  }
+  body:has(.hero-heading-left) .hero-heading-left {
+    padding: 44px 20px 56px;
+  }
+}
