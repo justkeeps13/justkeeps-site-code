@@ -6,7 +6,6 @@
 html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar:not(.fixed){position:absolute!important;top:0!important;left:0!important;right:0!important;width:100%!important;background:transparent!important;z-index:30!important}
 html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar:not(.fixed) .white_brand_logo{opacity:1!important;visibility:visible!important;pointer-events:auto!important}
 html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar:not(.fixed) .black_brand_logo{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
-html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar:not(.fixed) .header-nav-link,html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar:not(.f
 
 /* emb-journal-9c337956 block 3 */
 /* Staging: final Journal/Destinations geometry and hero header */
@@ -20,7 +19,6 @@ html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar .contact_us_btn{color
 html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar.fixed{background:#f6f1ea!important}
 html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar.fixed .white_brand_logo{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
 html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar.fixed .black_brand_logo{opacity:1!important;visibility:visible!important;pointer-events:auto!important}
-html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar.fixed .header-nav-link,html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar.fixed .jkt-services-disclosure,html[data-wf-page="6a2ce6767b5b0788750dfb0f"] body .navbar.fixed
 
 /* emb-journal-9c337956 block 5 */
 /* Staging: isolated responsive Journal geometry */
