@@ -1,0 +1,469 @@
+/* jkt-service-polish-2026-09-07 */
+/* 1. The index photograph was already position:sticky in the template, but .jkt-frame
+   carried overflow:hidden, which makes the frame a scroll container and silently kills
+   sticky. The left column then sat empty for the lower half of the ledger.
+   overflow-x:clip keeps the horizontal clipping that rule was there for. */
+.jkt-frame{overflow:visible!important;overflow-x:clip!important;overflow-y:visible!important}
+@media screen and (min-width:992px){
+.jkt-split{align-items:start!important}
+.jkt-split-media{position:sticky!important;top:8.25rem!important;align-self:start!important}
+}
+
+/* 2. Journey band. The scrim only ran top to bottom and was at 18 percent where the
+   copy sits, so the kicker and heading washed out over bright water. Adds a left to
+   right pass beneath the copy and leaves the right side of the photograph open. */
+.jkt-journey-scrim{background-image:linear-gradient(90deg,rgba(10,13,17,.80) 0%,rgba(10,13,17,.62) 34%,rgba(10,13,17,.22) 62%,rgba(10,13,17,0) 88%),linear-gradient(180deg,rgba(10,13,17,.10) 0%,rgba(10,13,17,.20) 42%,rgba(10,13,17,.72) 100%)!important}
+@media screen and (max-width:767px){
+.jkt-journey-scrim{background-image:linear-gradient(180deg,rgba(10,13,17,.30) 0%,rgba(10,13,17,.58) 46%,rgba(10,13,17,.86) 100%)!important}
+}
+
+/* jkt-corporate-responsive-ledger-2026-09-12 */
+/* Keep the feature image above a readable, full-width service ledger below desktop. */
+@media screen and (max-width:1100px){
+  .jkt-frame .jkt-split{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    align-items:start!important;
+  }
+  .jkt-frame .jkt-split-media{
+    grid-column:1!important;
+    position:static!important;
+    align-self:start!important;
+    width:100%!important;
+    min-width:0!important;
+  }
+  .jkt-frame .jkt-ledger{
+    grid-column:1/-1!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:0!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+  }
+  .jkt-frame .jkt-lrow{
+    grid-template-columns:38px minmax(0,1fr)!important;
+    column-gap:20px!important;
+    min-width:0!important;
+  }
+}
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-lrow{
+    grid-template-columns:26px minmax(0,1fr)!important;
+    column-gap:14px!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-override-2026-09-12 */
+/* The ledger is a Rich Text Block, so force its inner rows to one readable column too. */
+@media screen and (max-width:1100px){
+  .jkt-frame .jkt-ledger > div,
+  .jkt-frame .jkt-ledger .w-richtext,
+  .jkt-frame .jkt-ledger .w-richtext > div{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-auto-flow:row!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow{
+    display:grid!important;
+    grid-column:1/-1!important;
+    grid-template-columns:38px minmax(0,1fr)!important;
+    column-gap:20px!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    float:none!important;
+    clear:both!important;
+  }
+}
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger .jkt-lrow{
+    grid-template-columns:26px minmax(0,1fr)!important;
+    column-gap:14px!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-columns-2026-09-12 */
+/* Remove any rich-text multi-column flow at tablet/mobile widths. */
+@media screen and (max-width:1100px){
+  .jkt-frame .jkt-ledger,
+  .jkt-frame .jkt-ledger > div,
+  .jkt-frame .jkt-ledger .w-richtext,
+  .jkt-frame .jkt-ledger .w-richtext > div{
+    column-count:1!important;
+    columns:1!important;
+    column-width:auto!important;
+    column-gap:0!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-auto-flow:row!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"],
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"]{
+    display:grid!important;
+    grid-column:1/-1!important;
+    grid-template-columns:38px minmax(0,1fr)!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    float:none!important;
+    clear:both!important;
+    break-inside:avoid!important;
+  }
+}
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger .jkt-lrow,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"],
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"]{
+    grid-template-columns:26px minmax(0,1fr)!important;
+    column-gap:14px!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-mobile-numbering-2026-09-12 */
+/* Keep each mobile row in two intentional tracks: number left, copy right. */
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger .jkt-lrow{
+    display:grid!important;
+    grid-template-columns:32px minmax(0,1fr)!important;
+    grid-auto-flow:row!important;
+    column-gap:16px!important;
+    align-items:start!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow > :first-child{
+    grid-column:1!important;
+    grid-row:1/-1!important;
+    position:static!important;
+    margin:0!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow > :not(:first-child){
+    grid-column:2!important;
+    min-width:0!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-mobile-counter-2026-09-12 */
+/* Rebuild the narrow ledger as a stable numbered list when the internal grid gets too tight. */
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger{
+    counter-reset:jkt-corporate-row!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"],
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"]{
+    display:block!important;
+    position:relative!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    padding:24px 0 24px 48px!important;
+    margin:0!important;
+    counter-increment:jkt-corporate-row!important;
+    float:none!important;
+    clear:both!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow::before,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"]::before,
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"]::before{
+    content:counter(jkt-corporate-row,decimal-leading-zero)!important;
+    position:absolute!important;
+    top:25px!important;
+    left:0!important;
+    width:32px!important;
+    font-size:11px!important;
+    line-height:1.2!important;
+    letter-spacing:.16em!important;
+    color:currentColor!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow > :first-child,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"] > :first-child,
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"] > :first-child{
+    display:none!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow > :not(:first-child),
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"] > :not(:first-child),
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"] > :not(:first-child){
+    display:block!important;
+    grid-column:auto!important;
+    width:auto!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin-left:0!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-mobile-stable-2026-09-12 */
+/* Give the narrow layout its own dependable number rail and keep the copy clear. */
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger{
+    counter-reset:jkt-corporate-row!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"],
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"]{
+    display:block!important;
+    position:relative!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    padding:24px 0 24px 48px!important;
+    margin:0!important;
+    counter-increment:jkt-corporate-row!important;
+    float:none!important;
+    clear:both!important;
+    grid-column:auto!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow::before,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"]::before,
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"]::before{
+    content:counter(jkt-corporate-row,decimal-leading-zero)!important;
+    position:absolute!important;
+    top:25px!important;
+    left:0!important;
+    width:32px!important;
+    font-size:11px!important;
+    line-height:1.2!important;
+    letter-spacing:.16em!important;
+    color:currentColor!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow > :first-child,
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"] > :first-child,
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"] > :first-child{
+    display:none!important;
+  }
+  .jkt-frame .jkt-ledger .jkt-lrow > :not(:first-child),
+  .jkt-frame .jkt-ledger [class^="jkt-lrow"] > :not(:first-child),
+  .jkt-frame .jkt-ledger [class*=" jkt-lrow"] > :not(:first-child){
+    display:block!important;
+    width:auto!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin-left:0!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-mobile-structure-2026-09-12 */
+/* Target the Rich Text Block's real row containers by their heading child. */
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger{
+    display:block!important;
+    counter-reset:jkt-corporate-row!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> h3){
+    display:block!important;
+    position:relative!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    padding:24px 0 24px 48px!important;
+    margin:0!important;
+    border-top:1px solid rgba(34,34,34,.18)!important;
+    counter-increment:jkt-corporate-row!important;
+    float:none!important;
+    clear:both!important;
+    grid-column:auto!important;
+    break-inside:avoid!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> h3)::before{
+    content:counter(jkt-corporate-row,decimal-leading-zero)!important;
+    position:absolute!important;
+    top:27px!important;
+    left:0!important;
+    width:32px!important;
+    font-size:11px!important;
+    line-height:1.2!important;
+    letter-spacing:.16em!important;
+    color:currentColor!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> h3) > :first-child{
+    display:none!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> h3) > :not(:first-child){
+    display:block!important;
+    width:auto!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin-left:0!important;
+    grid-column:auto!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> h3) > h3{
+    margin-top:0!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-mobile-row-wrapper-2026-09-12 */
+/* Restore the copy wrapper, then place each anonymous rich-text row on two tracks. */
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger div:has(> h3){
+    display:block!important;
+    position:static!important;
+    width:auto!important;
+    max-width:none!important;
+    min-width:0!important;
+    padding:0!important;
+    margin:0!important;
+    border-top:0!important;
+    counter-increment:none!important;
+    float:none!important;
+    clear:none!important;
+    grid-column:2!important;
+    break-inside:auto!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> h3)::before{
+    content:none!important;
+    display:none!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> h3) > :first-child{
+    display:block!important;
+    margin-top:0!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3){
+    display:grid!important;
+    grid-template-columns:32px minmax(0,1fr)!important;
+    grid-auto-flow:row!important;
+    column-gap:16px!important;
+    align-items:start!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    padding:24px 0!important;
+    margin:0!important;
+    border-top:1px solid rgba(34,34,34,.18)!important;
+    counter-increment:none!important;
+    float:none!important;
+    clear:both!important;
+    break-inside:avoid!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3)::before{
+    content:none!important;
+    display:none!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3) > :first-child{
+    display:block!important;
+    grid-column:1!important;
+    grid-row:1!important;
+    position:static!important;
+    width:auto!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3) > :nth-child(2){
+    display:block!important;
+    grid-column:2!important;
+    grid-row:1!important;
+    width:auto!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+  }
+}
+
+/* jkt-corporate-responsive-ledger-mobile-heading-ledger-2026-09-12 */
+/* Final mobile presentation: one vertical ledger with a stable number rail. */
+@media screen and (max-width:767px){
+  .jkt-frame .jkt-ledger{
+    display:block!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    column-count:1!important;
+    columns:1!important;
+    counter-reset:jkt-corporate-row!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3),
+  .jkt-frame .jkt-ledger div:has(> h3){
+    display:block!important;
+    position:static!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    padding:0!important;
+    margin:0!important;
+    border:0!important;
+    float:none!important;
+    clear:both!important;
+    grid-column:auto!important;
+    counter-increment:none!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3)::before,
+  .jkt-frame .jkt-ledger div:has(> h3)::before{
+    content:none!important;
+    display:none!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3) > :first-child{
+    display:none!important;
+  }
+  .jkt-frame .jkt-ledger div:has(> div > h3) > :nth-child(2){
+    display:block!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .jkt-frame .jkt-ledger h3{
+    display:block!important;
+    position:relative!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:24px 0 8px 48px!important;
+    border-top:1px solid rgba(34,34,34,.18)!important;
+    counter-increment:jkt-corporate-row!important;
+    float:none!important;
+    clear:both!important;
+    grid-column:auto!important;
+  }
+  .jkt-frame .jkt-ledger h3::before{
+    content:counter(jkt-corporate-row,decimal-leading-zero)!important;
+    position:absolute!important;
+    top:27px!important;
+    left:0!important;
+    width:32px!important;
+    font-size:11px!important;
+    line-height:1.2!important;
+    letter-spacing:.16em!important;
+    color:currentColor!important;
+  }
+  .jkt-frame .jkt-ledger h3 + p{
+    display:block!important;
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    margin:0 0 24px!important;
+    padding:0!important;
+  }
+}
+
+/* jkt-live-closing-bar-2026-09-13 */
+/* Replace the preview-only destination bar with the live site's closing CTA. */
+#jkt-service-destination-bar{display:block!important}
+
+/* jkt-service-faq-precision-2026-09-13 */
+/* Service-page FAQs: a quieter, sharper accordion system. */
+.jkt-faq{max-width:1080px!important}
+.jkt-faq .w-richtext{border-top:1px solid rgba(40,35,30,.18)!important}
+.jkt-faq-item{margin:0!important;border-bottom:1px solid rgba(40,35,30,.18)!important}
+.jkt-faq-item summary{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;padding:22px 0!important;cursor:pointer!important;list-style:none!important}
+.jkt-faq-item summary::-webkit-details-marker{display:none!important}
+.jkt-faq-q{font-size:clamp(1.3rem,1.75vw,1.75rem)!important;line-height:1.16!important;letter-spacing:-.012em!important}
+.jkt-faq-mark{position:relative!important;display:block!important;width:1.25rem!important;height:1.25rem!important;flex:0 0 1.25rem!important;border:1px solid rgba(40,35,30,.5)!important;border-radius:50%!important}
+.jkt-faq-mark:before,.jkt-faq-mark:after{content:""!important;position:absolute!important;left:50%!important;top:50%!important;width:.5rem!important;height:1px!important;background:currentColor!important;transform:translate(-50%,-50%)!important}
+.jkt-faq-mark:after{transform:translate(-50%,-50%) rotate(90deg)!important}
+.jkt-faq-item[open] .jkt-faq-mark:after{opacity:0!important}
+.jkt-faq-a{max-width:52rem!important;padding:0 3rem 24px 0!important}
+.jkt-faq-a p{margin:0!important;font-size:1rem!important;line-height:1.68!important}
+@media screen and (max-width:767px){.jkt-faq-item summary{gap:16px!important;padding:18px 0!important}.jkt-faq-q{font-size:1.2rem!important}.jkt-faq-a{padding:0 0 20px!important}.jkt-faq-a p{font-size:.98rem!important;line-height:1.62!important}}
+
+/* jkt-service-masthead-reveal-2026-09-27 */
+.jksvc-motion-decoy{display:none!important}
+.jkt-mast-h1.jksvc-mast .jksvc-line{display:block;overflow:hidden}
+.jkt-mast-h1.jksvc-mast .jksvc-line>span{display:block;opacity:0;transform:translate3d(0,112%,0);will-change:transform,opacity}
+.jkt-mast-h1.jksvc-mast.jksvc-mast-on .jksvc-line>span{opacity:1;transform:translate3d(0,0,0);transition:transform 980ms cubic-bezier(.16,.84,.26,1),opacity 720ms ease;transition-delay:var(--jksvc-delay,0ms)}
+@media (prefers-reduced-motion:reduce){.jkt-mast-h1.jksvc-mast .jksvc-line>span{opacity:1!important;transform:none!important;transition:none!important}}
