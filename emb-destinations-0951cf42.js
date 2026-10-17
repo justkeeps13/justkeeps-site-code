@@ -96,7 +96,7 @@ function boot(){
     var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-pressed','false');
     if(p){
       b.className='jkx__pl';
-      var im=document.createElement('img'); im.src=p[0]; im.alt=p[1]; im.decoding='async'; b.appendChild(im); fade(im);
+      var im=document.createElement('img'); im.loading='lazy'; im.src=p[0]; im.alt=p[1]; im.decoding='async'; b.appendChild(im); fade(im);
       var l=document.createElement('span'); l.className='jkx__pll';
       l.innerHTML='<span class="jkx__plt"></span><span class="jkx__plc"></span>';
       l.querySelector('.jkx__plt').textContent=r.name;
@@ -115,7 +115,7 @@ function boot(){
   function card(x,showTag){
     var b=document.createElement('button'); b.type='button'; b.className='jkx__card';
     b.innerHTML='<div class="jkx__tile"></div>'+(showTag?'<span class="jkx__ctag"></span>':'')+'<h3></h3><p></p>';
-    var im=document.createElement('img'); im.src=x.src; im.alt=x.alt||x.name; im.decoding='async';
+    var im=document.createElement('img'); im.loading='lazy'; im.src=x.src; im.alt=x.alt||x.name; im.decoding='async';
     b.querySelector('.jkx__tile').appendChild(im); fade(im);
     if(showTag) b.querySelector('.jkx__ctag').textContent=x.region;
     b.querySelector('h3').textContent=x.name;
