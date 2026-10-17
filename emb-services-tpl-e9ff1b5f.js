@@ -101,6 +101,8 @@ try{
   ];
   const titleForPage=()=>{
     const path=(location.pathname||'/').replace(/\/+$/,'')||'/';
+    // City concierge pages use their own CMS heading.
+    if(/^\/services\/[a-z0-9-]+-concierge$/.test(path)) return null;
     if(titles[path]) return titles[path];
     const copy=(document.querySelector('main')?.innerText||document.body?.innerText||'').slice(0,900).replace(/One plan, start to finish|One trusted family office travel desk|Everyone here, one plan|Movement, on the clock|The details that travel with you/g,'')
     const match=pageSignals.find(([signal])=>signal.test(copy));
