@@ -1,0 +1,47 @@
+/* Site-wide heading consistency, Oct 21 2026 audit.
+   One rule for section headings: Cormorant Garamond, light (300).
+   Loaded last in the site head so it settles the mix of Georgia, Inter, 400, 500 and 700 headings. */
+
+/* 1. Every section heading inside the page content is light. Bold words inside a heading (<strong>) keep their weight. */
+html body main h2:not(#jx1):not(#jx2):not(#jx3) {
+  font-weight: 300 !important;
+}
+
+/* 2. Headings that were falling back to Georgia: Destinations intro, Journal intro, and the "Plan [destination]" closing heading on every guide. */
+html body .jkt-dest-intro__inner h2:not(#jx1):not(#jx2):not(#jx3),
+html body .jkt-hub-intro__inner h2:not(#jx1):not(#jx2):not(#jx3),
+html body h2.jkt-destination-article-cta-title:not(#jx1):not(#jx2):not(#jx3),
+html body .jkt-destination-article-cta h2:not(#jx1):not(#jx2):not(#jx3) {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 300 !important;
+}
+
+/* 3. Destinations index region headings ("Europe & Mediterranean") were Inter 52px. */
+html body h2.jkx__rh:not(#jx1):not(#jx2):not(#jx3),
+html body .jkx__rh h2:not(#jx1):not(#jx2):not(#jx3) {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 300 !important;
+  font-size: clamp(2rem, 3.2vw, 2.75rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -.01em !important;
+  text-transform: none !important;
+}
+
+/* 4. Press article card titles were Inter; now the same serif as the rest of the site. */
+html body .jkt-press-card__title:not(#jx1):not(#jx2):not(#jx3) {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  letter-spacing: -.005em !important;
+  line-height: 1.15 !important;
+}
+html body .jkt-press-card__title:not(#jx1):not(#jx2):not(#jx3) {
+  font-size: max(1em, 1.6rem) !important;
+}
+
+/* 5. Destination guide question titles in the FAQ accordion were Inter; match the FAQ page and journal. */
+html body details > summary h3:not(#jx1):not(#jx2):not(#jx3) {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-size: max(1em, 1.4rem) !important;
+  letter-spacing: -.005em !important;
+}
