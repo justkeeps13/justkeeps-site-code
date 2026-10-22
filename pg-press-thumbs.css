@@ -1,0 +1,25 @@
+/* Press page thumbnails, Oct 21 2026.
+   The smaller article cards had a narrow, full height image column with the image shrunk to fit,
+   leaving blank space above and below. Photos and page scans now fill a consistent 200px column.
+   Logo images (alt text containing "logo") keep their contained fit. The large lead card is untouched. */
+@media screen and (min-width: 768px) {
+  :is(html[data-wf-page="6a391425859cc21ad4260f1c"] body #jkt-main article.jkt-press-native-item ~ article.jkt-press-native-item,
+      html[data-wf-page="6a391425859cc21ad4260f1c"] body #jkt-main article.jkt-press-latest) a.jkt-press-native-link:not(#jx1):not(#jx2) {
+    grid-template-columns: 200px minmax(0, 1fr) !important;
+  }
+}
+:is(html[data-wf-page="6a391425859cc21ad4260f1c"] body #jkt-main article.jkt-press-native-item ~ article.jkt-press-native-item,
+    html[data-wf-page="6a391425859cc21ad4260f1c"] body #jkt-main article.jkt-press-latest) figure.jkt-press-native-media:not(#jx1):not(#jx2) {
+  overflow: hidden !important;
+  align-self: stretch !important;
+  height: auto !important;
+  min-height: 100% !important;
+}
+:is(html[data-wf-page="6a391425859cc21ad4260f1c"] body #jkt-main article.jkt-press-native-item ~ article.jkt-press-native-item,
+    html[data-wf-page="6a391425859cc21ad4260f1c"] body #jkt-main article.jkt-press-latest) figure.jkt-press-native-media img:not([alt*="logo" i]):not(#jx1):not(#jx2) {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  object-position: 50% 30% !important;
+}
