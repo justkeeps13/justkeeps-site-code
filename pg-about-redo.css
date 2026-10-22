@@ -1,0 +1,92 @@
+/* About page redo, approved Oct 21 2026. Loads after pg-about-head.css. */
+
+/* jkt-about-bio-redo-2026-10-21
+   Bio: one photo column (sticky on tablet and desktop) beside one continuous text column.
+   The trailing paragraphs and Inquire button sit in the text column instead of dropping below the photo. */
+@media screen and (min-width: 768px) {
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story {
+    overflow: clip !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_wrap {
+    display: grid !important;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) !important;
+    grid-template-rows: auto 1fr;
+    column-gap: clamp(3.5rem, 6.5vw, 7rem) !important;
+    row-gap: 0 !important;
+    align-items: start !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_wrap > .about_grid.about_grid {
+    display: contents !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_image {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    position: sticky !important;
+    top: 9rem !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 4 / 5;
+    margin: 0 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_img {
+    object-position: 50% 35% !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_content {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100% !important;
+    max-width: 36rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_wrap > div:not(.about_grid) {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100% !important;
+    max-width: 36rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_content h2 {
+    margin-top: 0 !important;
+    margin-bottom: 1.75rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_wrap .text-size-small {
+    font-size: 1.0625rem !important;
+    line-height: 1.7 !important;
+    margin: 0 0 1.25rem !important;
+  }
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_wrap > div:not(.about_grid) .button,
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_wrap > div:not(.about_grid) a[class*="button"] {
+    margin-top: 1rem !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main #about-story .about_wrap > div:not(.about_grid) {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* jkt-about-values-header-align-2026-10-21 */
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main .our_values_wrap > .section_header {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main .our_values_wrap > .section_header .tagline {
+  text-align: left !important;
+}
+html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main .our_values_wrap > h2 {
+  max-width: none !important;
+  width: 100% !important;
+  text-wrap: balance;
+}
+@media screen and (min-width: 992px) {
+  html[data-wf-page="6a2ba2e45e1c44ad056e3845"] body #jkt-main .our_values_wrap > h2 {
+    max-width: 7em !important;
+    text-wrap: wrap !important;
+  }
+}
