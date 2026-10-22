@@ -1,0 +1,65 @@
+/* Services page intro redo, approved Oct 21 2026. Loads after pg-services-head.css.
+   The intro keeps one paragraph beside the headline. The two city link lines move into a
+   full width band below, smaller and muted, with every link kept for search. */
+@media screen and (min-width: 768px) {
+  html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-standfirst {
+    display: contents !important;
+  }
+  html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-standfirst > p:not(.jkt-local-line) {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0 !important;
+  }
+  html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-local-line {
+    grid-column: 1 / -1;
+  }
+  html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-standfirst > p:not(.jkt-local-line) + .jkt-local-line {
+    grid-row: 2;
+    margin-top: clamp(2.5rem, 4vw, 3.5rem) !important;
+    padding-top: 1.5rem !important;
+    border-top: 1px solid rgba(34, 34, 34, .14);
+  }
+  html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-local-line + .jkt-local-line {
+    grid-row: 3;
+  }
+  html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 {
+    row-gap: 0 !important;
+  }
+}
+html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-local-line {
+  font-size: 12.5px !important;
+  line-height: 1.85 !important;
+  letter-spacing: .01em;
+  color: rgba(63, 59, 54, .72) !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-local-line .jkt-local-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(63, 59, 54, .22);
+  transition: color .2s, border-color .2s;
+}
+html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-local-line .jkt-local-link:hover {
+  color: #222 !important;
+  border-bottom-color: #222;
+}
+html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-standfirst > p:not(.jkt-local-line) + .jkt-local-line::before {
+  content: "Where our clients are";
+  display: block;
+  font-size: 9px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgb(124, 94, 51);
+  margin-bottom: .6rem;
+}
+html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-h2 {
+  max-width: 8em !important;
+}
+@media screen and (max-width: 767px) {
+  html[data-wf-page="6a2badce4cb232fc25936c43"] body .jkt-head2 .jkt-standfirst > p:not(.jkt-local-line) + .jkt-local-line {
+    margin-top: 2rem !important;
+    padding-top: 1.25rem !important;
+    border-top: 1px solid rgba(34, 34, 34, .14);
+  }
+}
