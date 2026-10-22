@@ -2,7 +2,7 @@
    When a ledger item is followed by loose paragraphs (the Group page's "A Miami group weekend" case study),
    those paragraphs used to drop into the second column, starting higher than the item they belong to and
    leaving holes on both sides. The item and its paragraphs now run full width as one block.
-   Pages whose ledgers are made only of numbered rows are unaffected. */
+   Pages whose ledgers are made only of numbered rows are unaffected by that part. */
 html[data-wf-page="6a5602b86f924c6bfe361a26"] body .jkt-split .jkt-ledger .w-richtext > .jkt-lrow:has(+ p):not(#jx1):not(#jx2):not(#jx3) {
   grid-column: 1 / -1 !important;
   padding-bottom: 1rem !important;
@@ -21,6 +21,16 @@ html[data-wf-page="6a5602b86f924c6bfe361a26"] body .jkt-split .jkt-ledger .w-ric
 html[data-wf-page="6a5602b86f924c6bfe361a26"] body .jkt-split .jkt-ledger .w-richtext > p:last-child:not(#jx1):not(#jx2):not(#jx3) {
   margin-bottom: 0 !important;
 }
+
+/* An odd number of rows (Entertainment has 9, Concierge 11) left the last item alone in the left column
+   with an empty space beside it. That last item now spans both columns. */
+html[data-wf-page="6a5602b86f924c6bfe361a26"] body .jkt-split .jkt-ledger .w-richtext > .jkt-lrow:last-child:nth-child(odd):not(#jx1):not(#jx2):not(#jx3) {
+  grid-column: 1 / -1 !important;
+}
+html[data-wf-page="6a5602b86f924c6bfe361a26"] body .jkt-split .jkt-ledger .w-richtext > .jkt-lrow:last-child:nth-child(odd) > p:not(.jkt-lnum):not(#jx1):not(#jx2):not(#jx3) {
+  max-width: 36rem;
+}
+
 @media screen and (max-width: 767px) {
   html[data-wf-page="6a5602b86f924c6bfe361a26"] body .jkt-split .jkt-ledger .w-richtext > p:not(#jx1):not(#jx2):not(#jx3) {
     padding-left: 0 !important;
