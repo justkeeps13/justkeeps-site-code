@@ -34,6 +34,30 @@ html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main h1.jkt-contact-h1:n
   line-height: 1.05 !important;
   letter-spacing: -.012em !important;
 }
+
+/* Contact: after a message is sent, the thank you box already offers "Arrange your complimentary call",
+   so the "Prefer to talk? / Schedule a consultation" block above it is hidden to avoid saying it twice. */
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .contact_form_block:has(> .w-form-done[style*="block"]) .jkt-contact-native-route:not(#jx1):not(#jx2):not(#jx3) {
+  display: none !important;
+}
+/* Thank you message: light heading and room between heading, line and button. */
 html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .w-form-done h2:not(#jx1):not(#jx2):not(#jx3) {
   font-weight: 300 !important;
+  line-height: 1.05 !important;
+  margin: 0 0 12px !important;
+}
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .w-form-done p:not(#jx1):not(#jx2):not(#jx3) {
+  margin: 0 0 24px !important;
+  line-height: 1.6 !important;
+}
+/* The box is focused for screen readers when it appears; drop the heavy outline that drew a double border. */
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .w-form-done[tabindex="-1"]:focus:not(#jx1):not(#jx2):not(#jx3) {
+  outline: none !important;
+}
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .w-form-done a.jkt-success-cta:focus:not(:focus-visible):not(#jx1):not(#jx2):not(#jx3) {
+  outline: none !important;
+}
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .w-form-done a.jkt-success-cta:focus-visible:not(#jx1):not(#jx2):not(#jx3) {
+  outline: 1px solid rgb(32, 35, 38) !important;
+  outline-offset: 3px !important;
 }
