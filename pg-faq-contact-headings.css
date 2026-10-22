@@ -1,0 +1,39 @@
+/* FAQ and Contact heading consistency, Oct 21 2026.
+   Loaded on /faq and /contact. Rules are scoped by page id so each page only picks up its own. */
+
+/* FAQ: category titles were Inter 52px bold uppercase. Now Cormorant light like every other section heading. */
+html[data-wf-page="6a2fd904d430be142f83e986"] body #jkt-main h2.jkt-faq-group-title:not(#jx1):not(#jx2):not(#jx3) {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 300 !important;
+  font-size: clamp(2rem, 3.2vw, 2.75rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -.01em !important;
+  text-transform: none !important;
+  color: #222 !important;
+  margin: 0 0 18px !important;
+}
+html[data-wf-page="6a2fd904d430be142f83e986"] body #jkt-main .jkt-faq-group + .jkt-faq-group:not(#jx1):not(#jx2):not(#jx3) {
+  padding-top: clamp(2rem, 3.5vw, 3rem) !important;
+}
+
+/* Contact: "Common questions" was a 52px uppercase headline. Now the same small label used on About and Services. */
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .jkt-qa h2.jkt-qa-eyebrow:not(#jx1):not(#jx2):not(#jx3) {
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  letter-spacing: .26em !important;
+  line-height: 20px !important;
+  text-transform: uppercase !important;
+  color: rgb(99, 96, 92) !important;
+  margin: 0 0 14px !important;
+}
+/* Contact: hero headline was bold. Now light like the other page heroes. */
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main h1.jkt-contact-h1:not(#jx1):not(#jx2):not(#jx3) {
+  font-weight: 300 !important;
+  font-size: clamp(2.75rem, 5.6vw, 4.75rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.012em !important;
+}
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .w-form-done h2:not(#jx1):not(#jx2):not(#jx3) {
+  font-weight: 300 !important;
+}
