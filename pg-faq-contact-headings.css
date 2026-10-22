@@ -35,8 +35,10 @@ html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main h1.jkt-contact-h1:n
   letter-spacing: -.012em !important;
 }
 
-/* Contact: after a message is sent, the thank you box already offers "Arrange your complimentary call",
-   so the "Prefer to talk? / Schedule a consultation" block above it is hidden to avoid saying it twice. */
+/* Contact: after a message is sent, the thank you box replaces the form, the same as Inquire.
+   This also removes the "Prefer to talk? / Schedule a consultation" block, which repeated the
+   thank you box's "Arrange your complimentary call". */
+html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .contact_form_block:has(> .w-form-done[style*="block"]) > form:not(#jx1):not(#jx2):not(#jx3),
 html[data-wf-page="6a2f87023f65f5442c807c7a"] body #jkt-main .contact_form_block:has(> .w-form-done[style*="block"]) .jkt-contact-native-route:not(#jx1):not(#jx2):not(#jx3) {
   display: none !important;
 }
