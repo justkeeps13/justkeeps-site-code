@@ -1,0 +1,24 @@
+/* Inquire page fixes, Oct 21 2026. */
+
+/* "Replies within 24 hours." The note is a flex row, which swallowed the space before "24 hours". */
+html[data-wf-page="6a82f40c1e7e7decef2e2138"] body #jkt-main .form-next-step-note > .jkt-nw:not(#jx1):not(#jx2):not(#jx3) {
+  margin-left: .28em !important;
+}
+
+/* After an inquiry is sent: the thank you box replaces the form (the filled form and the stuck
+   "Sending..." button no longer sit above it), and the Arrange a call / WhatsApp / Email row is hidden
+   because the thank you box already offers "Choose a call time". */
+html[data-wf-page="6a82f40c1e7e7decef2e2138"] body #jkt-main #inquiry_form_block:has(> .w-form-done[style*="block"]) > form:not(#jx1):not(#jx2):not(#jx3) {
+  display: none !important;
+}
+html[data-wf-page="6a82f40c1e7e7decef2e2138"] body #jkt-main .contact_wrap_grid:has(.w-form-done[style*="block"]) > .jkt-inquire-actions-only:not(#jx1):not(#jx2):not(#jx3) {
+  display: none !important;
+}
+
+/* Heavy double outlines from programmatic or mouse focus. Keyboard focus still shows the default ring. */
+html[data-wf-page="6a82f40c1e7e7decef2e2138"] body #jkt-main .w-form-done[tabindex="-1"]:focus:not(#jx1):not(#jx2):not(#jx3) {
+  outline: none !important;
+}
+html[data-wf-page="6a82f40c1e7e7decef2e2138"] body #jkt-main #inquiry_form [type="submit"]:focus:not(:focus-visible):not(#jx1):not(#jx2):not(#jx3) {
+  outline: none !important;
+}
