@@ -85,12 +85,6 @@ try{
     if(intro&&grid){
       intro.classList.add("jkt-inquire-editorial-intro");
       if(intro.parentElement!==grid)grid.insertBefore(intro,grid.firstChild);
-      var eyebrow=intro.querySelector(".tagline");
-      var title=intro.querySelector("h1");
-      var copy=intro.querySelector("p");
-      if(eyebrow)eyebrow.textContent="Private travel inquiry";
-      if(title)title.textContent="Let’s begin.";
-      if(copy)copy.textContent="Share the essentials. We’ll take it from there.";
     }
 
     requiredIds.forEach(function(id){configureField(id,true)});
