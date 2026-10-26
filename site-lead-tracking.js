@@ -10,6 +10,7 @@
     return window.__jktConsent === "all" && typeof window.gtag === "function";
   }
   function cleanUrl(value) {
+    if (!value) return "";
     try { var url = new URL(value, location.origin); return url.origin + url.pathname; }
     catch (_) { return ""; }
   }
