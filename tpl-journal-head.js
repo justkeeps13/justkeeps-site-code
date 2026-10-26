@@ -22,7 +22,7 @@ try{
 })();
 }catch(e){console.warn("jkt template block failed: jkt-dg-canonical-2026-09-07",e)}
 
-/* tpl-journal-head block 2 */
+/* tpl-journal-head block 2 (author kept from CMS author-schema-id, 2026-10-26) */
 try{
 (function () {
   function decodeSchemaText(value) {
@@ -67,8 +67,18 @@ try{
         }
       });
 
-      if (authorName && authorName.toLowerCase() !== "justkeeps travel") {
+      var staticId = article.author && typeof article.author["@id"] === "string" ? article.author["@id"] : "";
+      if (staticId.indexOf("https://") === 0) {
+        if (article.author.name) article.author.name = decodeSchemaText(article.author.name);
+        if (/#justin-keeperman$/.test(staticId)) {
+          article.author.url = "https://www.justkeepstravel.com/about";
+        }
+        article.creator = { "@id": staticId };
+      } else if (authorName && authorName.toLowerCase() !== "justkeeps travel") {
         var authorId = article.url + "#author";
+        if (authorName.toLowerCase() === "justin keeperman") {
+          authorId = "https://www.justkeepstravel.com/about#justin-keeperman";
+        }
         article.author = {
           "@type": "Person",
           "@id": authorId,
