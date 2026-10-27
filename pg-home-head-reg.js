@@ -1,0 +1,44 @@
+/* Justkeeps Travel: homepage head scripts, combined Oct 26 2026 from the 5 Webflow registered page scripts below, in their original load order.
+   Each script is unchanged and wrapped so an error in one cannot stop the others. */
+
+/* jkt_home_header_rules_combined-1.0.0.js */
+try{
+(function(){var P='html[data-wf-page="6a1f886748e8c1c8bceca3b9"] body .navbar:not(.fixed) ';if(document.getElementById('jkt-home-nav-over-hero'))return;var s=document.createElement('style');s.id='jkt-home-nav-over-hero';s.textContent=P+'.header-nav-link:not(.contact_us_btn){color:#FBF6F2!important;text-shadow:0 1px 12px rgba(8,10,14,.55)}'+P+'.w-dropdown-toggle,'+P+'.w-dropdown-toggle .w-icon-dropdown-toggle{color:#FBF6F2!important}'+P+'.header-nav-link.contact_us_btn{color:#FBF6F2!important;border-color:rgba(251,246,242,.6)!important}'+P+'.menu-button-2 .line{background-color:#FBF6F2!important}';document.head.appendChild(s);})();
+(function(){
+  if(document.getElementById('jkt-guide-label-dedupe'))return;
+  var s=document.createElement('style');s.id='jkt-guide-label-dedupe';
+  s.textContent='#jkt-home-guide-group-label{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}';
+  (document.head||document.documentElement).appendChild(s);
+})();
+}catch(e){if(window.console)console.error("[jkt_home_header_rules_combined-1.0.0.js]",e);}
+
+/* jkt_home_mobile_h1_instant-1.0.0.js */
+try{
+(function(){
+if(window.innerWidth>767)return;
+var css='html body .hero_wrap h1,html body .hero_wrapper h1{opacity:1!important;transform:none!important;visibility:visible!important}html body .hero_wrap h1.jkm .jkm-l>i,html body .hero_wrap h1.jkm .jkm-l,html body .hero_wrap h1.jkm{transform:none!important;opacity:1!important;overflow:visible!important}';
+var s=document.createElement('style');
+s.id='jkt-home-mobile-h1-instant';
+s.textContent=css;
+(document.head||document.documentElement).appendChild(s);
+function force(){var h=document.querySelector('.hero_wrap h1,.hero_wrapper h1');if(!h)return;h.style.setProperty('opacity','1','important');h.style.setProperty('transform','none','important');h.style.setProperty('visibility','visible','important');}
+force();
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',force,{once:true});
+var t=[50,200,500,1000,2000];for(var i=0;i<t.length;i++)setTimeout(force,t[i]);
+})();
+}catch(e){if(window.console)console.error("[jkt_home_mobile_h1_instant-1.0.0.js]",e);}
+
+/* jkt_home_polish_v3-1.0.0.js */
+try{
+(function(){var P='6a1f886748e8c1c8bceca3b9',d=document;if(d.documentElement.getAttribute('data-wf-page')!==P)return;var h='html[data-wf-page="'+P+'"]',m='.jkt-motion-ready [data-jkt-',l=d.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&display=swap';d.head.appendChild(l);var s=d.createElement('style');s.id='jkt-home-polish';s.textContent='@media (prefers-reduced-motion:no-preference){'+h+m+'reveal]{transform:translate3d(0,.5rem,0);transition:opacity .38s ease-out calc(var(--jkt-delay,0ms)*.4),transform .42s ease-out calc(var(--jkt-delay,0ms)*.4)!important}'+h+m+'reveal].jkt-in-view{transform:none}'+h+m+'image-reveal]{transition:clip-path .5s ease-out!important}'+h+m+'image-reveal] img{transition:transform .6s ease-out!important}}'+h+' .div-block-4,'+h+' .expert_guides,'+h+' .your_guide_wrap,'+h+' .section_header.gap_12[data-w-id]{opacity:1!important;transform:none!important}'+h+' .jkt-approved-quote{font-family:"Cormorant Garamond",Georgia,serif!important;font-style:italic!important;font-weight:400!important;font-size:clamp(1.6rem,2.6vw,2.6rem)!important;line-height:1.18!important}@media (max-width:767px){'+h+' #jkt-home-master-content .jkh-heading{max-width:22ch!important;text-wrap:balance}}'+h+' #jkt-home-master-content [data-jkh-slot=guides] .your_guide_form>.size_10{text-transform:none!important;letter-spacing:.01em!important;font-size:.8rem!important;line-height:1.55!important}'+h+' .jkh-microcopy-sentence{text-transform:none!important;letter-spacing:.01em!important}';d.head.appendChild(s);function curl(t){return t.replace(/(\w)'(\w)/g,'$1’$2').replace(/'([^']+)'/g,'‘$1’').replace(/^\s*"/,'“').replace(/"\s*$/,'”')}function boot(){var q=d.querySelector('[data-jkt-quote]');if(!q)return;var f=function(){var n=curl(q.textContent);if(n!==q.textContent)q.textContent=n};f();new MutationObserver(f).observe(q,{childList:true,characterData:true,subtree:true})}if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',function(){setTimeout(boot,0)});else boot();})();
+}catch(e){if(window.console)console.error("[jkt_home_polish_v3-1.0.0.js]",e);}
+
+/* jktheroexternalvideo20-1.0.0.js */
+try{
+(function(){var D=document,O=CSSStyleDeclaration.prototype,F=O.setProperty;O.setProperty=function(p,v,i){F.call(this,p,/6vw,88/.test(v)?0:v=='15ch'?'19ch':v,i)};var B='https://justkeeps-hero-media.justin-keeperman.workers.dev/',M=screen.width<768,S=B+'justkeeps-hero-'+(M?'vertical':'1080p')+'-v4.mp4',P=B+'hero-poster'+(M?'-vertical':'')+'-v3.webp',H=D.head||D.documentElement,l;function L(r,h,a){l=D.createElement('link');l.rel=r;l.href=h;if(a){l.as=a;l.setAttribute('fetchpriority','high')}H.appendChild(l)}L('preconnect',B);L('preload',P,'image');l=D.createElement('style');l.textContent='.hero_bg_image_wrap{background-color:#0f374c}.hero_bg_video{isolation:isolate;background:#0f374c url('+P+') center/cover no-repeat}';H.appendChild(l);function go(v){var p=v.play();p&&p.catch(Object)}function fix(v,end){if(!v.__jk){v.__jk=1;v.poster=P;v.preload='auto';v.style.backgroundImage='none';v.muted=v.defaultMuted=v.loop=v.autoplay=v.playsInline=true;v.setAttribute('playsinline','');v.addEventListener('canplay',function(){go(v)})}v.querySelectorAll('source').forEach(function(s){if(s.getAttribute('src')!=S){s.removeAttribute('src');s.remove()}});if(!v.querySelector('source')){var n=D.createElement('source');n.src=S;n.type='video/mp4';v.appendChild(n)}if(end){if(v.currentSrc!=S)v.load();go(v)}}function hv(n){return n.closest&&n.closest('.hero_bg_video')}var mo=new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType!=1)return;var p=n.parentNode;if(n.nodeName=='VIDEO'&&hv(n))fix(n);else if(n.nodeName=='SOURCE'&&p&&p.nodeName=='VIDEO'&&hv(p))fix(p);else if(n.querySelectorAll)n.querySelectorAll('.hero_bg_video video').forEach(function(v){fix(v)})})})});mo.observe(D.documentElement,{childList:true,subtree:true});D.addEventListener('DOMContentLoaded',function(){mo.disconnect();var v=D.querySelector('.hero_bg_video video');if(!v)return;fix(v,1);D.addEventListener('touchstart',function(){go(v)},{once:true,passive:true})})})();
+}catch(e){if(window.console)console.error("[jktheroexternalvideo20-1.0.0.js]",e);}
+
+/* jktherolayout2-1.0.0.js */
+try{
+(function(){var s=document.createElement('style');s.id='jkt-hero-layout';s.textContent=".bg_overlay{opacity:.12!important}.hero_wrap:not(#x){opacity:1!important;transform:none!important}.hero_wrap h1,.hero_wrap p,.hero_wrap .tagline{text-shadow:0 1px 14px #050a1280}@media(min-width:992px){.hero_wrapper:not(#x){min-height:100vh!important;padding-bottom:0!important}.hero_wrapper .padding-section-large:not(#x){display:flex;flex-direction:column;justify-content:center;min-height:100vh;box-sizing:border-box;padding:118px 0 0!important}.hero_wrap:not(#x){margin-top:0!important}.hero_wrap h1:not(#x){font-size:clamp(36px,min(5.4vw,23.8vh - 104px),76px)!important}}@media(max-width:767px){.hero_wrap .button-group{margin-top:48px!important}.hero_bg_video:after{background-image:linear-gradient(#08101a73,#08101a1a 22%,#08101a3d 50% 70%,#08101a73)!important}}@media(max-width:991px){html[data-wf-page] body .navbar .w-nav-menu .w-dropdown .header-nav-link.jkt-services-main-link{color:#1b2022!important;text-shadow:none!important}}#jkt-home-master-content .jkh-service-grid>.jkh-service:nth-child(n){grid-column:auto/span 2!important}@media(max-width:991px){#jkt-home-master-content .jkh-service-grid>.jkh-service:nth-child(n){grid-column:auto/span 1!important}}@media(max-width:767px){#jkt-home-master-content .jkh-service-grid>.jkh-service:nth-child(n){grid-column:1/-1!important}}";document.head.appendChild(s)})();
+}catch(e){if(window.console)console.error("[jktherolayout2-1.0.0.js]",e);}
