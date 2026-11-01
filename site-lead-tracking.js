@@ -30,11 +30,12 @@
   }
   function bindInquiry() {
     var form = document.getElementById("inquiry_form");
-    if (!form || form.dataset.jktLeadMeasurementBound) return;
+    if (!form) return "missing";
+    if (form.dataset.jktLeadMeasurementBound) return "bound";
     var wrapper = form.closest(".w-form");
     var success = wrapper && wrapper.querySelector(".w-form-done");
     var failure = wrapper && wrapper.querySelector(".w-form-fail");
-    if (!success) return;
+    if (!success) return "pending";
     form.dataset.jktLeadMeasurementBound = "true";
     var pending = false;
     var failureWasVisible = visible(failure);
@@ -59,6 +60,7 @@
       subtree: true, childList: true, attributes: true,
       attributeFilter: ["style", "class", "hidden", "aria-hidden"]
     });
+    return "bound";
   }
   document.addEventListener("click", function (event) {
     if (event.isTrusted === false) return;
@@ -69,10 +71,15 @@
     if (now - lastPhoneClick < 1500) return;
     if (send("phone_click", { contact_method: "phone" })) lastPhoneClick = now;
   }, true);
+  function retryInquiryBinding(delays) {
+    if (!delays.length) return;
+    window.setTimeout(function () {
+      if (bindInquiry() === "pending") retryInquiryBinding(delays.slice(1));
+    }, delays[0]);
+  }
   function boot() {
-    bindInquiry();
-    // The form is initially native; retry for the site's delayed layout setup.
-    [500, 1500, 3000].forEach(function (delay) { window.setTimeout(bindInquiry, delay); });
+    // Form pages may need a few layout-settle checks; pages without a form do not.
+    if (bindInquiry() === "pending") retryInquiryBinding([500, 1000, 1500]);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot, { once: true });
   else boot();
