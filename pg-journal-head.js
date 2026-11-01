@@ -92,6 +92,9 @@ window.JKTThemes={v:'1.0.0',norm:norm,tags:tags,clauses:clauses,list:function(v)
     return categoryKey(title+' '+attr);
   }
   function searchText(item){return norm([item.title,item.description,item.metaTitle,item.category,item.href,item.alt,item.dateLabel].join(' '))}
+  /* jkt-journal-newest-first-2026-11-01: All Articles and every tab list newest first. Exact date from data-date on the card (CMS Date ISO), month and year from the card label as fallback. */
+  var JKT_MONTHS=['january','february','march','april','may','june','july','august','september','october','november','december'];
+  function itemTime(a,meta){var holder=a.hasAttribute('data-date')?a:a.querySelector('[data-date]')||a.closest('[data-date]');var d=holder?holder.getAttribute('data-date'):'';var t=d?Date.parse(d):NaN;if(!isNaN(t))return t;var m=/(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})/i.exec(meta?meta.textContent:'');return m?Date.UTC(+m[2],JKT_MONTHS.indexOf(m[1].toLowerCase()),1):0}
   function collect(){
     var seen={},next=[];
     document.querySelectorAll('.journal_tab_pane a[href^="/journal/"]').forEach(function(a){
@@ -102,9 +105,9 @@ window.JKTThemes={v:'1.0.0',norm:norm,tags:tags,clauses:clauses,list:function(v)
       var title=(titleNode&&titleNode.textContent||a.textContent||'').replace(/\s+/g,' ').trim();
       if(!title)return;
       if(!cat){unclassified.push({href:href,title:title});return;}
-      next.push({href:href,category:cat,title:title,alt:(image&&image.getAttribute('alt'))||'',meta:meta?meta.textContent:'',cardImage:(image&&((image.currentSrc||image.getAttribute('src'))||''))||'',source:source.cloneNode(true),description:'',metaTitle:'',dateLabel:'',themes:TH?TH.list(themesOf(a)):[]});
+      next.push({href:href,category:cat,title:title,alt:(image&&image.getAttribute('alt'))||'',meta:meta?meta.textContent:'',cardImage:(image&&((image.currentSrc||image.getAttribute('src'))||''))||'',source:source.cloneNode(true),ts:itemTime(a,meta),description:'',metaTitle:'',dateLabel:'',themes:TH?TH.list(themesOf(a)):[]});
     });
-    data=next;data.forEach(function(item){item.search=searchText(item)});if(unclassified.length&&window.console&&console.warn)console.warn('[JustKeeps] Journal records held for category review:',unclassified.map(function(item){return item.href}));return data.length;
+    next.forEach(function(item,i){item.order=i});next.sort(function(x,y){return (y.ts-x.ts)||(x.order-y.order)});data=next;data.forEach(function(item){item.search=searchText(item)});if(unclassified.length&&window.console&&console.warn)console.warn('[JustKeeps] Journal records held for category review:',unclassified.map(function(item){return item.href}));return data.length;
   }
   function updateMeta(card,item){
     var meta=card.querySelector('.journal_box_cate');
