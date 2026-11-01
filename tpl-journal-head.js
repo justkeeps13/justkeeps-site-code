@@ -239,3 +239,46 @@ try{
   }
 })();
 }catch(e){console.warn("jkt template block failed: jkt-journal-empty-spacer-normalizer-2026-09-16",e)}
+
+
+/* jkt-journal-visible-date-2026-11-01 */
+try{
+(function () {
+  function findArticle() {
+    var scripts = document.querySelectorAll('script[type="application/ld+json"]');
+    for (var i = 0; i < scripts.length; i += 1) {
+      try {
+        var data = JSON.parse(scripts[i].textContent || "");
+        var nodes = Array.isArray(data) ? data : (Array.isArray(data["@graph"]) ? data["@graph"] : [data]);
+        for (var j = 0; j < nodes.length; j += 1) {
+          var node = nodes[j];
+          if (node && (node["@type"] === "BlogPosting" || node["@type"] === "Article")) return node;
+        }
+      } catch (ignore) {}
+    }
+    return null;
+  }
+
+  function renderDate() {
+    var crumb = document.querySelector(".sf-hero-copy .sf-crumb");
+    if (!crumb || crumb.getAttribute("data-jkt-visible-date") === "true") return;
+
+    var article = findArticle();
+    if (!article) return;
+    var value = article.dateModified || article.datePublished;
+    var date = value ? new Date(value) : null;
+    if (!date || isNaN(date.getTime())) return;
+
+    var label = article.dateModified && article.datePublished && article.dateModified !== article.datePublished ? "Updated" : "Published";
+    var formatted = date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+    crumb.appendChild(document.createTextNode(" · " + label + " " + formatted));
+    crumb.setAttribute("data-jkt-visible-date", "true");
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderDate, { once: true });
+  } else {
+    renderDate();
+  }
+}());
+}catch(e){console.warn("jkt template block failed: jkt-journal-visible-date-2026-11-01",e)}
