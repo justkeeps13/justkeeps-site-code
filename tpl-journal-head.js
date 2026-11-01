@@ -270,7 +270,7 @@ try{
     if (!date || isNaN(date.getTime())) return;
 
     var label = article.dateModified && article.datePublished && article.dateModified !== article.datePublished ? "Updated" : "Published";
-    var formatted = date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+    var formatted = date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
     crumb.appendChild(document.createTextNode(" · " + label + " " + formatted));
     crumb.setAttribute("data-jkt-visible-date", "true");
   }
