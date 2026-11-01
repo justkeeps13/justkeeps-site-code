@@ -98,6 +98,14 @@
       var listItem = document.createElement("li");
       listItem.className = "jkt-breadcrumbs__item";
 
+      if (index > 0) {
+        var separator = document.createElement("span");
+        separator.className = "jkt-breadcrumbs__separator";
+        separator.setAttribute("aria-hidden", "true");
+        separator.textContent = "/";
+        listItem.appendChild(separator);
+      }
+
       if (index === trail.length - 1) {
         var current = document.createElement("span");
         current.setAttribute("aria-current", "page");
