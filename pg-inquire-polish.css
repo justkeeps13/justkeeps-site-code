@@ -43,3 +43,5 @@ html[data-wf-page].jkt-nav-solid body .navbar:not(#jk1):not(#jk2):not(#jk3) .bla
 @media (min-width:860px) and (max-width:991px){
 html body .navbar .w-nav-button .line{background-color:#202326!important}
 }
+/* All screen sizes: call, WhatsApp and email buttons centered */
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .jkt-inquire-actions-only a{justify-content:center!important;text-align:center!important}
