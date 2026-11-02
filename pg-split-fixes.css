@@ -1,0 +1,18 @@
+/* Fixes for the Contact and Book split screen pages (Nov 2 2026). Load after pg-contact-split.css or pg-book-split.css. */
+
+/* Laptops 1240 to 1399: nav links would cross the photo edge, so the bar stays solid ivory */
+@media (min-width:1240px) and (max-width:1399px){
+html body .navbar.w-nav:not(#jk1):not(#jk2){background:rgba(251,246,242,.97)!important;box-shadow:0 1px 0 rgba(32,35,38,.08)!important}
+html body .navbar:not(#jk1) .white_brand_logo:not(#jk2){opacity:0!important}
+html body .navbar:not(#jk1) .black_brand_logo:not(#jk2){opacity:1!important}
+}
+
+/* Tablets: menu icon sits over the ivory side, so it goes dark */
+@media (min-width:860px) and (max-width:991px){
+html body .navbar .w-nav-button .line{background-color:#202326!important}
+}
+
+/* Book page: deeper shade behind the kicker so "Let's Connect" reads over the sand */
+@media (min-width:860px){
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .destinations_banner_overlay{background:linear-gradient(180deg,rgba(14,17,19,.45) 0%,rgba(14,17,19,.06) 26%,rgba(14,17,19,.28) 48%,rgba(14,17,19,.86) 100%)!important}
+}
