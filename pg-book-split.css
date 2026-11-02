@@ -1,0 +1,46 @@
+/* Justkeeps Book a Consultation page: split screen (image left, calendar right). Desktop only, mobile untouched. Approved Nov 2 2026. */
+@media (min-width:860px){
+html body main.main-wrapper:not(#jk1):not(#jk2){display:grid!important;grid-template-columns:5fr 7fr!important;align-items:start!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>*{grid-column:1/-1}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper{grid-column:1!important;position:sticky!important;top:0!important;height:100vh!important;min-height:0!important;overflow:hidden!important;display:block!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .destinations_banner_bg{position:absolute!important;inset:0!important;height:100%!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .destinations_banner_image{width:100%!important;height:100%!important;object-fit:cover!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .destinations_banner_overlay{position:absolute!important;inset:0!important;background:linear-gradient(180deg,rgba(14,17,19,.5) 0%,rgba(14,17,19,.08) 28%,rgba(14,17,19,.12) 50%,rgba(14,17,19,.8) 100%)!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper>.padding-global{position:absolute!important;left:0!important;right:0!important;bottom:0!important;top:auto!important;height:auto!important;z-index:3!important;padding:0 clamp(48px,5vw,80px) clamp(56px,9vh,96px)!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .container-large,
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .section_header{max-width:none!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .tagline{display:flex!important;align-items:center;gap:14px;font-size:11px!important;letter-spacing:.32em!important;opacity:.85;margin:0!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .tagline::before{content:"";width:36px;height:1px;background:currentColor;opacity:.7}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper h1{font-size:clamp(46px,5vw,84px)!important;line-height:.98!important;letter-spacing:-.02em!important;font-weight:300!important;margin:6px 0 18px!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper h1+p{font-size:14.5px!important;line-height:1.7!important;max-width:400px!important;opacity:.82!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper{grid-column:2!important;min-height:100vh!important;padding:calc(111px + 3vh) 0 5vh!important;margin:0!important;background:#FBF6F2!important;text-align:left!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper>.padding-global{padding:0 clamp(32px,5vw,88px)!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .container-large{max-width:620px!important;width:100%!important;margin:0!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .padding-section-large{padding:0!important;display:flex!important;flex-direction:column!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .jkt-book-intro{display:contents!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .jkt-book-intro-heading{order:1;text-align:left!important;font-size:clamp(26px,2.4vw,34px)!important;line-height:1.1!important;margin:0 0 1.4vh!important;max-width:none!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .jkt-book-intro-text{text-align:left!important;font-size:13px!important;line-height:1.65!important;color:#716B65!important;max-width:none!important;margin:0!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .jkt-book-intro-text:nth-of-type(1){order:2;padding-bottom:2vh!important;margin-bottom:1vh!important;border-bottom:1px solid rgba(32,35,38,.14)!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .contact_wrap{order:3;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;animation:jkRise 1s cubic-bezier(.2,.7,.2,1) .25s both}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .jkt-book-intro-text:nth-of-type(2){order:4;margin-top:2.4vh!important;padding-top:2vh!important;border-top:1px solid rgba(32,35,38,.14)!important}
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .book_calendly,
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .book_calendly_code,
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .jkt-calendar-wrap{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+@keyframes jkRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+/* Nav links sit over the ivory side, so they go dark at the top of the page */
+@media (min-width:992px){
+html:not(.jkt-nav-solid) body .navbar .header-nav-link:not(.sub-link),
+html:not(.jkt-nav-solid) body .navbar .w-dropdown-toggle,
+html:not(.jkt-nav-solid) body .navbar .w-dropdown-toggle *,
+html:not(.jkt-nav-solid) body .navbar .jkt-clients-nav-trigger,
+html:not(.jkt-nav-solid) body .navbar .jkt-clients-nav-trigger *{color:#202326!important;text-shadow:none!important;filter:none!important}
+html:not(.jkt-nav-solid) body .navbar .contact_us_btn{border-color:#202326!important;color:#202326!important}
+html:not(.jkt-nav-solid) body .navbar .contact_us_btn:hover{background:#202326!important;color:#FBF6F2!important}
+}
+/* Smaller laptops: nav links would cross the photo edge, so the bar goes solid ivory */
+@media (min-width:992px) and (max-width:1239px){
+html body .navbar.w-nav:not(#jk1):not(#jk2){background:rgba(251,246,242,.97)!important;box-shadow:0 1px 0 rgba(32,35,38,.08)!important}
+html body .navbar:not(#jk1) .white_brand_logo:not(#jk2){opacity:0!important}
+html body .navbar:not(#jk1) .black_brand_logo:not(#jk2){opacity:1!important}
+}
