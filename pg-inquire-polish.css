@@ -1,0 +1,44 @@
+/* Justkeeps Inquire page: styling matched to the Contact and Book split pages. Desktop and tablet only, mobile untouched. Approved Nov 2 2026. */
+@media (min-width:860px){
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-media .destinations_banner_overlay{background:linear-gradient(180deg,rgba(14,17,19,.5) 0%,rgba(14,17,19,.08) 28%,rgba(14,17,19,.18) 50%,rgba(14,17,19,.8) 100%)!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-media .jk-ov{padding-left:clamp(48px,5vw,80px)!important;padding-bottom:clamp(56px,9vh,96px)!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-media .jk-ov .tagline{display:flex!important;align-items:center;gap:14px;font-size:11px!important;letter-spacing:.32em!important;opacity:.85}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-media .jk-ov .tagline::before{content:"";width:36px;height:1px;background:currentColor;opacity:.7;flex:none}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-media .jk-ov h1{font-weight:300!important;letter-spacing:-.02em!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-media .jk-ov h1+p{font-size:14.5px!important;line-height:1.7!important;max-width:400px!important;opacity:.82!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_form_input{border-bottom-color:rgba(32,35,38,.18)!important;background:linear-gradient(#202326,#202326) no-repeat 0 100%/0 1px!important;transition:background-size .5s cubic-bezier(.2,.7,.2,1)!important;font-size:15px!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_form_input:focus{background-size:100% 1px!important;outline:none!important;box-shadow:none!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_form_input::placeholder{color:rgba(113,107,101,.6)!important;font-style:italic;font-family:"Cormorant Garamond",serif;font-size:18px}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_form_label{letter-spacing:.22em!important;color:#8a837c!important;font-size:10.5px!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .jkt-inquire-submit-row input[type=submit]{letter-spacing:.28em!important;padding:17px 52px!important;transition:background .3s,letter-spacing .4s!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .jkt-inquire-submit-row input[type=submit]:hover{background:#000!important;letter-spacing:.34em!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_wrap{animation:jkRise 1s cubic-bezier(.2,.7,.2,1) .25s both}
+@keyframes jkRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+/* Nav: dark links over the ivory form side, in every scroll state */
+@media (min-width:992px){
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .header-nav-link:not(.sub-link):not(.contact_us_btn),
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .w-dropdown-toggle,
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .w-dropdown-toggle *,
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .jkt-clients-nav-trigger,
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .jkt-clients-nav-trigger *{color:#202326!important;-webkit-text-fill-color:#202326!important;text-shadow:none!important;filter:none!important}
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .contact_us_btn{border-color:#202326!important;color:#202326!important;-webkit-text-fill-color:#202326!important;background:transparent!important}
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .contact_us_btn:hover{background:#202326!important;color:#FBF6F2!important;-webkit-text-fill-color:#FBF6F2!important}
+}
+/* Laptops up to 1399: solid ivory bar so links never cross the photo */
+@media (min-width:992px) and (max-width:1399px){
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3){background:rgba(251,246,242,.97)!important;box-shadow:0 1px 0 rgba(32,35,38,.08)!important;backdrop-filter:none!important}
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .white_brand_logo{opacity:0!important}
+html[data-wf-page] body .navbar:not(#jk1):not(#jk2):not(#jk3) .black_brand_logo{opacity:1!important}
+}
+/* Wide screens: clear at the top, ivory once scrolled */
+@media (min-width:1400px){
+html[data-wf-page]:not(.jkt-nav-solid) body .navbar:not(#jk1):not(#jk2):not(#jk3){background:transparent!important;box-shadow:none!important;backdrop-filter:none!important}
+html[data-wf-page].jkt-nav-solid body .navbar:not(#jk1):not(#jk2):not(#jk3){background:rgba(251,246,242,.97)!important;box-shadow:0 1px 0 rgba(32,35,38,.08)!important}
+html[data-wf-page].jkt-nav-solid body .navbar:not(#jk1):not(#jk2):not(#jk3) .white_brand_logo{opacity:0!important}
+html[data-wf-page].jkt-nav-solid body .navbar:not(#jk1):not(#jk2):not(#jk3) .black_brand_logo{opacity:1!important}
+}
+/* Tablets: menu icon goes dark */
+@media (min-width:860px) and (max-width:991px){
+html body .navbar .w-nav-button .line{background-color:#202326!important}
+}
