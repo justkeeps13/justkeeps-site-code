@@ -11,7 +11,7 @@ html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact
 html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_form_input::placeholder{color:rgba(113,107,101,.6)!important;font-style:italic;font-family:"Cormorant Garamond",serif;font-size:18px}
 html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_form_label{letter-spacing:.22em!important;color:#8a837c!important;font-size:10.5px!important}
 html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .jkt-inquire-submit-row input[type=submit]{letter-spacing:.28em!important;width:auto!important;min-width:200px!important;padding:17px 36px 17px calc(36px + .28em)!important;text-align:center!important;transition:background .3s,letter-spacing .4s,padding .4s!important}
-html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .jkt-inquire-submit-row input[type=submit]:hover{background:#000!important;letter-spacing:.34em!important;padding-left:calc(36px + .34em)!important}
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .jkt-inquire-submit-row input[type=submit]:hover{background:#000!important;color:#FBF6F2!important;-webkit-text-fill-color:#FBF6F2!important;letter-spacing:.34em!important;padding-left:calc(36px + .34em)!important}
 html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .jkt-inquire-actions-only a{justify-content:center!important;text-align:center!important}
 html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_wrap{animation:jkRise 1s cubic-bezier(.2,.7,.2,1) .25s both}
 @keyframes jkRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
