@@ -22,17 +22,17 @@ html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .contact
 
 /* Contact */
 html body .jk-cm-shell .jkt-contact-panel .jkt-contact-intro,
-html body .jk-cm-shell .jkt-contact-panel .contact_form>*>*,
-html body .jk-cm-shell .jkt-contact-panel .contact_form>div:nth-last-child(2) .jkt-contact-native-route>*{animation:jkRow .9s cubic-bezier(.2,.7,.2,1) both}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>.contact_form_flex>*,
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:not(.contact_form_flex){animation:jkRow .9s cubic-bezier(.2,.7,.2,1) both}
 html body .jk-cm-shell .jkt-contact-panel .jkt-contact-intro{animation-delay:.25s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(1)>*{animation-delay:.35s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(2)>*{animation-delay:.43s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(3)>*{animation-delay:.51s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(4)>*{animation-delay:.59s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(5)>*{animation-delay:.67s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(6)>*{animation-delay:.75s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(n+7)>*{animation-delay:.83s}
-html body .jk-cm-shell .jkt-contact-panel .contact_form>div:nth-last-child(2) .jkt-contact-native-route>*{animation-delay:.91s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(1)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(1):not(.contact_form_flex){animation-delay:.35s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(2)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(2):not(.contact_form_flex){animation-delay:.43s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(3)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(3):not(.contact_form_flex){animation-delay:.51s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(4)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(4):not(.contact_form_flex){animation-delay:.59s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(5)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(5):not(.contact_form_flex){animation-delay:.67s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(6)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(6):not(.contact_form_flex){animation-delay:.75s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(7)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(7):not(.contact_form_flex){animation-delay:.83s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(n+8)>*,html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(n+8):not(.contact_form_flex){animation-delay:.91s}
 
 /* Inquire */
 html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>*,
