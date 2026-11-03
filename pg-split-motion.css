@@ -1,0 +1,59 @@
+/* Contact, Book and Inquire: quiet motion. Slow photo drift, kicker line draws in, form rows arrive in sequence.
+   Loaded only on those three pages. Off for anyone who prefers reduced motion.
+   Uses the separate `scale` property so the approved banner settle animation is untouched. */
+@media (min-width:860px) and (prefers-reduced-motion:no-preference){
+
+/* 1. Slow photo drift */
+html body .jkt-contact-media .destinations_banner_image,
+html body .jkt-inquire-editorial-media .destinations_banner_image,
+html body main.main-wrapper>section.destinations_banner_wrapper .destinations_banner_image{animation:jkDrift 22s cubic-bezier(.25,.1,.25,1) .2s both}
+@keyframes jkDrift{from{scale:1}to{scale:1.045}}
+
+/* 2. Kicker line draws in */
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-contact-media .jk-ov .tagline::before,
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-media .jk-ov .tagline::before,
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.destinations_banner_wrapper .tagline::before{transform-origin:left center;animation:jkLine 1.1s cubic-bezier(.65,0,.35,1) .35s both}
+@keyframes jkLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* 3. Rows arrive in sequence (replaces the single panel rise) */
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-contact-panel .contact_wrap,
+html body .jk-cm-shell:not(#jk1):not(#jk2) .jkt-inquire-editorial-panel .contact_wrap,
+html body main.main-wrapper:not(#jk1):not(#jk2)>section.contact_wrapper .contact_wrap{animation:none!important}
+
+/* Contact */
+html body .jk-cm-shell .jkt-contact-panel .jkt-contact-intro,
+html body .jk-cm-shell .jkt-contact-panel .contact_form>*>*,
+html body .jk-cm-shell .jkt-contact-panel .contact_form>div:nth-last-child(2) .jkt-contact-native-route>*{animation:jkRow .9s cubic-bezier(.2,.7,.2,1) both}
+html body .jk-cm-shell .jkt-contact-panel .jkt-contact-intro{animation-delay:.25s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(1)>*{animation-delay:.35s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(2)>*{animation-delay:.43s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(3)>*{animation-delay:.51s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(4)>*{animation-delay:.59s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(5)>*{animation-delay:.67s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(6)>*{animation-delay:.75s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>:nth-child(n+7)>*{animation-delay:.83s}
+html body .jk-cm-shell .jkt-contact-panel .contact_form>div:nth-last-child(2) .jkt-contact-native-route>*{animation-delay:.91s}
+
+/* Inquire */
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>*,
+html body .jk-cm-shell .jkt-inquire-editorial-panel .jkt-inquire-actions-only{animation:jkRow .9s cubic-bezier(.2,.7,.2,1) both}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>:nth-child(1){animation-delay:.3s}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>:nth-child(2){animation-delay:.38s}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>:nth-child(3){animation-delay:.46s}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>:nth-child(4){animation-delay:.54s}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>:nth-child(5){animation-delay:.62s}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>:nth-child(6){animation-delay:.7s}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .contact_form>:nth-child(n+7){animation-delay:.78s}
+html body .jk-cm-shell .jkt-inquire-editorial-panel .jkt-inquire-actions-only{animation-delay:.9s}
+
+/* Book */
+html body main.main-wrapper:not(#jk1):not(#jk2):not(#jk3)>section.contact_wrapper .jkt-book-intro-heading,
+html body main.main-wrapper:not(#jk1):not(#jk2):not(#jk3)>section.contact_wrapper .jkt-book-intro-text,
+html body main.main-wrapper:not(#jk1):not(#jk2):not(#jk3)>section.contact_wrapper .contact_wrap{animation:jkRow .9s cubic-bezier(.2,.7,.2,1) both!important}
+html body main.main-wrapper:not(#jk1):not(#jk2):not(#jk3)>section.contact_wrapper .jkt-book-intro-heading{animation-delay:.25s!important}
+html body main.main-wrapper:not(#jk1):not(#jk2):not(#jk3)>section.contact_wrapper .jkt-book-intro-text:nth-of-type(1){animation-delay:.35s!important}
+html body main.main-wrapper:not(#jk1):not(#jk2):not(#jk3)>section.contact_wrapper .contact_wrap{animation-delay:.45s!important}
+html body main.main-wrapper:not(#jk1):not(#jk2):not(#jk3)>section.contact_wrapper .jkt-book-intro-text:nth-of-type(2){animation-delay:.6s!important}
+
+@keyframes jkRow{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
