@@ -11,7 +11,7 @@ try{
     "Travel-Type":"Travel style",
     "datepicker":"Trip timing",
     "NUMBER-OF-TRAVELERS":"Travelers (optional)",
-    "Budget-Range":"Trip budget (optional)",
+    "Budget-Range":"Total trip budget, including flights, for all travelers (optional)",
     "Destination-s-of-Interest":"Destinations",
     "Tell-Us-About-Your-Trip":"A few details"
   };
