@@ -62,6 +62,19 @@ function boot(){
   });
   if(!regions.length) return;
   regions.sort(function(a,b){ var ia=ORDER.indexOf(a.name),ib=ORDER.indexOf(b.name); if(ia<0)ia=99; if(ib<0)ib=99; return ia-ib; });
+
+  /* Keep the A-to-Z links and counts in sync with the searchable directory. */
+  var az=document.querySelector('.jkt-az');
+  if(az){
+    az.querySelectorAll('details').forEach(function(node){node.remove()});
+    regions.forEach(function(region){
+      var details=document.createElement('details'),summary=document.createElement('summary'),list=document.createElement('ul');
+      var seen={};var entries=region.items.filter(function(item){if(seen[item.href])return false;seen[item.href]=true;return true}).slice().sort(function(a,b){return a.name.localeCompare(b.name)});
+      summary.textContent=region.name+' ('+entries.length+')';
+      entries.forEach(function(item){var li=document.createElement('li'),a=document.createElement('a');a.href=item.href;a.textContent=item.name;li.appendChild(a);list.appendChild(li)});
+      details.append(summary,list);az.appendChild(details);
+    });
+  }
   var q=document.getElementById('jkx-q'), clr=document.getElementById('jkx-clr'), ct=document.getElementById('jkx-ct'), chips=document.getElementById('jkx-chips'), out=document.getElementById('jkx-out'), empty=document.getElementById('jkx-empty'), term=document.getElementById('jkx-term'), rst=document.getElementById('jkx-rst');
   ct.setAttribute('role','status');ct.setAttribute('aria-live','polite');ct.setAttribute('aria-atomic','true');
   var MAX_QUERY=80, active='ALL', open={}, plateEls={}, wasSearching=false;
