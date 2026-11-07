@@ -72,7 +72,7 @@ try{
     '/services/concierge':'The details that travel with you'
   };
   const path=()=>{let p=location.pathname||'/';return p.length>1?p.replace(/\/+$/,''):p};
-  const fix=()=>{const title=titles[path()];if(!title)return;document.querySelectorAll('main h1,h1').forEach(h=>{if(!h.classList.contains('jkm')&&!h.classList.contains('jksvc-mast')&&h.getClientRects().length&&(h.textContent||'').replace(/\s+/g,' ').trim()!==title)h.textContent=title})};
+  const fix=()=>{const title=titles[path()];if(!title)return;document.querySelectorAll('main h1,h1').forEach(h=>{if(!h.classList.contains('jkm')&&!h.classList.contains('jksvc-mast')&&!h.classList.contains('sf-h1')&&h.getClientRects().length&&(h.textContent||'').replace(/\s+/g,' ').trim()!==title)h.textContent=title})};
   const start=()=>{
     fix();
     let queued=false;new MutationObserver(()=>{if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;fix()})}}).observe(document.documentElement,{childList:true,subtree:true});
@@ -112,7 +112,7 @@ try{
     const title=titleForPage();
     if(!title) return;
     document.querySelectorAll('h1').forEach(h=>{
-      if(!h.classList.contains('jkm')&&!h.classList.contains('jksvc-mast')&&h.getClientRects().length && h.textContent.replace(/\s+/g,' ').trim()!==title) h.textContent=title;
+      if(!h.classList.contains('jkm')&&!h.classList.contains('jksvc-mast')&&!h.classList.contains('sf-h1')&&h.getClientRects().length && h.textContent.replace(/\s+/g,' ').trim()!==title) h.textContent=title;
     });
   };
   const start=()=>{
