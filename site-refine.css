@@ -48,6 +48,7 @@ html body a.jkx__card h3:not(#jr1):not(#jr2){font-family:"Cormorant Garamond",se
 @media (min-width:992px){
 html body .sf-faq-inner h2:not(#jr1):not(#jr2){font-size:52px!important}
 html body .bio_wrap .w-richtext>h2:not(#jr1):not(#jr2){font-size:44px!important}
+html body .expert_guides h2:not(#jr1):not(#jr2){font-size:52px!important}
 }
 
 /* F1. Phone contact bar */
@@ -57,9 +58,9 @@ html body .bio_wrap .w-richtext>h2:not(#jr1):not(#jr2){font-size:44px!important}
 .jkr-bar.jkr-two{grid-template-columns:1fr 1fr}
 html.jkr-bar-on .jkr-bar{transform:none}
 html.jkr-bar-hide .jkr-bar{transform:translateY(105%)}
-.jkr-bar a{display:flex;align-items:center;justify-content:center;height:52px;font:500 11px/1 Inter,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#fbf6f2;text-decoration:none;-webkit-tap-highlight-color:transparent}
-.jkr-bar a+a{border-left:1px solid rgba(251,246,242,.14)}
-.jkr-bar a.jkr-bar-main{background:#fbf6f2;color:#1c2225}
+html body .jkr-bar a:not(#jr1):not(#jr2){display:flex;align-items:center;justify-content:center;height:52px;font:500 11px/1 Inter,Arial,sans-serif!important;letter-spacing:.2em!important;text-transform:uppercase;color:#fbf6f2!important;-webkit-text-fill-color:#fbf6f2!important;text-decoration:none!important;-webkit-tap-highlight-color:transparent}
+html body .jkr-bar a+a:not(#jr1):not(#jr2){border-left:1px solid rgba(251,246,242,.14)}
+html body .jkr-bar a.jkr-bar-main:not(#jr1):not(#jr2){background:#fbf6f2;color:#1c2225!important;-webkit-text-fill-color:#1c2225!important}
 html.jkr-has-bar .footer_wrapper{padding-bottom:calc(52px + env(safe-area-inset-bottom))}
 }
 @media (prefers-reduced-motion:reduce){.jkr-bar{transition:none}}
