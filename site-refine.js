@@ -1,6 +1,7 @@
 /* Justkeeps site-wide refinements, Nov 22 2026. Pairs with site-refine.css.
    1. Phone contact bar: Call, Text, Inquire. Phones only, appears after the first scroll.
-   2. Destination guides: a slim band partway down the article. */
+   2. Destination guides: a slim band partway down the article.
+   3. Homepage hero: makes sure the Text Justin button opens a text message. */
 try{
 (function(){
   var TEL="+15613003540";
@@ -58,10 +59,21 @@ try{
     body.insertBefore(band,heads[Math.ceil(heads.length/2)]);
   }
 
+  function heroTextLink(){
+    var links=document.querySelectorAll(".hero_wrapper a.button");
+    for(var i=0;i<links.length;i++){
+      if(/^\s*text justin\s*$/i.test(links[i].textContent)&&links[i].getAttribute("href")!=="sms:"+TEL){
+        links[i].setAttribute("href","sms:"+TEL);
+        links[i].removeAttribute("target");
+      }
+    }
+  }
+
   ready(function(){
     var path=location.pathname.replace(/\/+$/,"")||"/";
     try{contactBar(path)}catch(e){}
     try{guideBand(path)}catch(e){}
+    try{heroTextLink()}catch(e){}
   });
 })();
 }catch(e){}
