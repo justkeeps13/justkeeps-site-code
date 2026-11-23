@@ -11,7 +11,7 @@ try{
     "Travel-Type":"Travel style",
     "datepicker":"Trip timing",
     "NUMBER-OF-TRAVELERS":"Travelers (optional)",
-    "Budget-Range":"Total trip budget, including flights, for all travelers (optional)",
+    "Budget-Range":"Trip budget (optional)",
     "Destination-s-of-Interest":"Destinations",
     "Tell-Us-About-Your-Trip":"A few details"
   };
@@ -102,6 +102,8 @@ try{
     if(destinations)destinations.placeholder="Where would you like to go?";
     var details=field("Tell-Us-About-Your-Trip");
     if(details)details.placeholder="Preferences, special moments, or anything we should know…";
+    var budget=field("Budget-Range");
+    if(budget&&budget.options&&budget.options.length&&budget.options[0].value==="")budget.options[0].textContent="Total, with flights";
     var travelers=field("NUMBER-OF-TRAVELERS");
     if(travelers)travelers.setAttribute("inputmode","numeric");
     preselectTravelStyle();
