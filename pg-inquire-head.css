@@ -235,7 +235,6 @@ html[data-wf-page="6a82f40c1e7e7decef2e2138"] .form-next-step-note{
   justify-self:start;
   margin:0!important;
   padding-left:1.25rem;
-  border-left:1px solid var(--jkt-inq-line);
   color:var(--jkt-inq-muted);
   font-size:.72rem;
   line-height:1.45;
