@@ -18,7 +18,7 @@ html body .navbar.fixed:not(.jkt-menu-open):not(#jr1) .brand-logo,html body .nav
 }
 
 /* B. Fade behind the menu on photo heroes. Not on the split form pages, which use a solid bar. */
-html.jkt-nav-media:not([data-wf-page="6a82f40c1e7e7decef2e2138"]):not([data-wf-page="6a2f87023f65f5442c807c7a"]):not([data-wf-page="6a2faabade45e959f30c2bbb"]) body .navbar:not(.fixed):not(.jkt-menu-open)::before{content:""!important;display:block!important;position:absolute!important;left:0;right:0;top:0;width:100%!important;height:200px!important;background:linear-gradient(180deg,rgba(14,17,19,.58) 0%,rgba(14,17,19,.3) 45%,rgba(14,17,19,0) 100%);pointer-events:none;z-index:-1}
+html.jkt-nav-media:not([data-wf-page="6a82f40c1e7e7decef2e2138"]):not([data-wf-page="6a2f87023f65f5442c807c7a"]):not([data-wf-page="6a2faabade45e959f30c2bbb"]) body .navbar:not(.fixed):not(.jkt-menu-open):not(.jkt-approved-site-header)::before{content:""!important;display:block!important;position:absolute!important;left:0;right:0;top:0;width:100%!important;height:200px!important;background:linear-gradient(180deg,rgba(14,17,19,.58) 0%,rgba(14,17,19,.3) 45%,rgba(14,17,19,0) 100%);pointer-events:none;z-index:-1}
 
 /* C. Contact and Book */
 @media (min-width:992px){
@@ -37,9 +37,11 @@ html body .jk-cm-shell select.contact_form_input option{font-family:Inter,sans-s
 /* D. Heroes */
 @media (min-width:992px) and (max-height:900px){
 html body .sf-hero:not(.jkt-dest-hero):not(#jr1):not(#jr2){min-height:100svh!important}
+html body .et-hero:not(#jr1):not(#jr2){min-height:100svh!important}
 }
 @media (min-width:992px){
-html body .sf-hero .sf-hero-inner:not(#jr1):not(#jr2){max-width:none!important;padding-left:max(64px,calc((100% - 1200px)/2))!important;padding-right:max(64px,calc((100% - 1200px)/2))!important}
+html body .sf-hero .sf-hero-inner:not(#jr1):not(#jr2),
+html body .et-hero .et-hero-inner:not(#jr1):not(#jr2){max-width:none!important;padding-left:max(64px,calc((100% - 1200px)/2))!important;padding-right:max(64px,calc((100% - 1200px)/2))!important}
 html body .destinations_banner_wrapper:not(.jk-ovh)>.padding-global:not(#jr1):not(#jr2){padding-left:max(64px,calc((100% - 1200px)/2))!important;padding-right:max(64px,calc((100% - 1200px)/2))!important}
 }
 
