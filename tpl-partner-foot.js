@@ -31,7 +31,7 @@ page.innerHTML='<section class="jkt-approved-hero"><img class="jkt-approved-hero
 nav.insertAdjacentElement("afterend",page);nav.classList.add("jkt-approved-site-header");fixNav();function enforceResponsiveHero(){var h=partnerHero(),im=document.querySelector(".jkt-approved-hero-image");if(!h||!h.srcset||!im)return;im.setAttribute("srcset",h.srcset);im.setAttribute("sizes","100vw");im.setAttribute("src",h.src);if(h.alt)im.setAttribute("alt",h.alt)}[0,50,250,900,1800,3000,8500].forEach(function(ms){setTimeout(enforceResponsiveHero,ms)});var fi=document.querySelector("#jkt-site-footer img");if(fi){fi.src="https://cdn.prod.website-files.com/6a1f886348e8c1c8bceca358/6a7bee80cd5dddd6aec6a009_Brand_logo_white.svg";fi.alt="Justkeeps Travel logo"}
 }
 function run(){[0,250,900,1800,3000].forEach(function(ms){setTimeout(render,ms)})}
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});else run()
+run();if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run,{once:true});
 })();
 }catch(e){console.warn("jkt template block failed: tpl-partner-foot block 1",e)}
 
