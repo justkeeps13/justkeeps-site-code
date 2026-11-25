@@ -347,3 +347,14 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:991px){.jkt-contact-shell{grid-template-columns:1fr;padding-top:72px}.jkt-contact-media{position:relative!important;top:auto;height:clamp(22rem,55vw,34rem)!important;min-height:0!important}.jkt-contact-panel .padding-section-large{padding:4.5rem clamp(1.5rem,6vw,4rem)!important}.jkt-contact-intro h1{font-size:clamp(3.6rem,11vw,6rem)}}
 @media(max-width:767.98px){.contact_form>.contact_form_flex{grid-template-columns:1fr!important}.contact_form>.contact_form_flex:has(#email){grid-template-columns:1fr!important}}
 @media(max-width:479px){.contact_form>.contact_form_flex{grid-template-columns:1fr!important}.jkt-contact-shell{padding-top:64px}.jkt-contact-media{height:20rem!important}.jkt-contact-panel .padding-section-large{padding:3.5rem 1.25rem!important}.jkt-contact-intro{margin-bottom:2.5rem}.jkt-contact-intro h1{font-size:3.45rem}.jkt-contact-route{grid-template-columns:1fr!important;padding:0!important}.jkt-contact-route>a{justify-content:center!important;white-space:normal!important}.jkt-ci-links{grid-template-columns:1fr}.jkt-ci-links a:first-child{grid-column:auto}.jkt-ci-links a{padding:1.1rem}.jkt-ci-links a span:last-child{font-size:.96rem}.jkt-ci-links a:first-child span:last-child{font-size:.82rem;letter-spacing:.04em;white-space:nowrap}}
+
+
+/* Contact editorial mast: critical CSS paired with pg-contact-foot.js so it is complete before first paint. */
+.jk-cm-shell:not(#jkx){display:block!important;padding-top:0!important}
+.jk-cm-shell>.destinations_banner_wrapper:not(#jkx){width:100%!important;max-width:none!important;height:auto!important;min-height:min(72svh,640px)!important;position:relative!important;top:0!important;margin:0!important;padding:0!important;display:flex!important;flex-direction:column!important;justify-content:flex-end!important}
+.jk-cm-shell .destinations_banner_bg:not(#jkx){position:absolute!important;inset:0!important;width:100%!important;height:100%!important}
+.jk-cm-shell .destinations_banner_bg img{width:100%!important;height:100%!important;object-fit:cover!important}
+.jk-cm-shell>.destinations_banner_wrapper>.padding-global{display:none!important}
+.jk-cm-shell>.contact_wrapper:not(#jkx){width:100%!important;max-width:none!important}
+.jk-cm-shell>.contact_wrapper .container-large:not(#jkx){max-width:760px!important;margin-left:auto!important;margin-right:auto!important}
+.jkt-contact-intro .jkt-contact-next a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
