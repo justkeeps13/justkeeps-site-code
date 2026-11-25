@@ -30,8 +30,17 @@
       if (n) el.setAttribute('aria-label', n);
     }
   }
+  function fixSmsLinkLabels() {
+    var links = document.querySelectorAll('a[href^="sms:"]');
+    for (var i = 0; i < links.length; i++) {
+      if ((links[i].textContent || '').trim().toLowerCase() === 'text justin') {
+        links[i].setAttribute('aria-label', 'Text Justin at 561-300-3540');
+      }
+    }
+  }
   function start() {
     run(document);
+    fixSmsLinkLabels();
     if (window.MutationObserver) {
       var pending = false;
       new MutationObserver(function () {
