@@ -205,6 +205,6 @@ try{
     }
     document.documentElement.classList.add("jkt-inquire-ready");
   }
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
+  if(!init()) document.addEventListener("DOMContentLoaded",init,{once:true});
 })();
 }catch(e){console.warn("jkt page block failed: jkt-inquire-option-1-consolidated-script-2026-09-04",e)}
